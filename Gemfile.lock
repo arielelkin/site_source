@@ -104,6 +104,8 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
+    octopress-image-tag (1.1.0)
+      jekyll
     public_suffix (1.5.3)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -128,6 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  octopress-image-tag
 
 BUNDLED WITH
    1.11.2
