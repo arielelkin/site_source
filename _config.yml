@@ -7,8 +7,8 @@
 
 # Site settings
 title: Ariel Elkin
-email: arielelkin@gmail.com
-description: The website of Ariel Elkin.
+#email: arielelkin@gmail.com
+#description: The website of Ariel Elkin.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://arielelkin.github.io" # the base hostname & protocol for your site
 twitter_username: AriVocals
@@ -17,3 +17,5 @@ disqus: arielelkin
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM

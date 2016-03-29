@@ -56,11 +56,11 @@ Here are the main benefits of this implementation:
  * You can add and remove delegate objects dynamically.
  * No extraneous abstractions required, i.e. you avoid using KVO and `NSNotificationCenter`.
  
-###When would I want to use this?
+### When would I want to use this?
 
 Whenever you need an object to talk to several other objects, and you want to use the delegate pattern. 
  
-###Delegate methods with return values
+### Delegate methods with return values
 
 Consider this method in `UITableViewDelegate`: 
  
@@ -74,8 +74,8 @@ Therefore, don't use one-to-many delegation for delegate methods whose return va
 
 You *can* combine one-to-many and one-to-one delegate methods in the same protocol, but it's not good practice as the contract is not clear. The compiler will think that any class that conforms to the protocol should implement all its non-optional methods. 
 
-###Discussion
-
+### Discussion
+ 
 Traditionally, delegators have only one delegate in Objectice-C. If they need to talk to more than one object, then we're told to either:
 
  * Set the delegate to a manager object which will be responsible for updating other objects.
@@ -87,7 +87,7 @@ The second option is chosen at the expense of delegation, i.e. having an object 
 
 Theres's two problems with these two alternatives:
 
-####Problem 1: They bring in a set of problems that are not worth solving if all you need is a one-to-many delegative relationship
+#### Problem 1: They bring in a set of problems that are not worth solving if all you need is a one-to-many delegative relationship
 
  * You're adding unnecessary complexity by having to deal with new abstractions *you* never needed: `NSKeyValueObservingOptions`, key paths, notification names, `NSNotification`,etc. 
   * There's no type-checking. I can shove whatever object I want as the `value` in `setValue:forKeyPath:`, and I can shove anything I want in an `NSNotification`'s `userInfo` dictionary. Which means that *you* need to ensure that your listeners are doing all the type-checking they can.
@@ -97,7 +97,7 @@ Theres's two problems with these two alternatives:
  * The list goes on (for more in-depth analyses (of people smarter than me who agree with me), check out the relevant articles in the References section below)
 
 
-####Problem 2: They force you to use their built-in event listeners
+#### Problem 2: They force you to use their built-in event listeners
 
 KVO forces you to implement at least these two monstrosities:
 ```objective-c
@@ -113,7 +113,7 @@ KVO forces you to implement at least these two monstrosities:
 
 But this method can have one and only one argument, and that argument must be of type `NSNotification`, and you have to fit your data into its `userInfo` dictionary.
 
-##Other implementations
+## Other implementations
 
 There are other implementations of multicast delegates in Objective-C:
 
@@ -135,13 +135,13 @@ These libraries are useful if you need to give multicasting capabilities to a Co
 
 I liked the idea of the `addDelegate` and `removeDelegate:` methods, but wanted an implementation that wasn't as complex, and which did not require a separate class. 
 
-##Demo
+## Demo
 
 Visit https://github.com/arielelkin/Obj-C-Multicast-Delegate for a demo project.
 
-##References aka Further Reading
+## References aka Further Reading
 
-###Articles
+### Articles
 
 * "Objective-c multicasting delegates" question on Stackoverflow. [Link](http://stackoverflow.com/a/14792617/1072846)
  * Colin Eberhardt, "A Multicast Delegate Pattern for iOS Controls". *Scott Logic*. [Link](http://www.scottlogic.com/blog/2012/11/19/a-multicast-delegate-pattern-for-ios-controls.html)
@@ -152,7 +152,7 @@ Visit https://github.com/arielelkin/Obj-C-Multicast-Delegate for a demo project.
  * Mike Ash, "Key-Value Observing Done Right". *mikeash.com*. [Link](https://www.mikeash.com/pyblog/key-value-observing-done-right.html).
  * Soroush Khanlou, "KVO Considered Harmful". *khanlou.com*. [Link](http://khanlou.com/2013/12/kvo-considered-harmful/)
 
-###Documentation
+### Documentation
 
 * "Protocol". *iOS Developer Library. Cocoa Core Competencies*. [Link](https://developer.apple.com/library/mac/documentation/general/conceptual/devpedia-cocoacore/Protocol.html)
 * "Notification and Delegation". *iOS Developer Library. Notification Programming Topics*. [Link](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Notifications/Articles/Notifications.html)

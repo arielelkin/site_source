@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-permalink: /talks/
+comments: false
 ---
 
 ## Talks and Workshops

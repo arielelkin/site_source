@@ -1,22 +1,20 @@
 ---
 layout: page
-title: "Home"
 comments: false
 sharing: false
 footer: false
 ---
 
-I'm a freelance iOS developer, this is my website.
+I'm an iOS developer, this is my website.
 
-<img style="float: left;" src="http://i.imgur.com/Rkoz13r.jpg">
+I work for [Project A Ventures](http://www.project-a.com/) in Berlin. 
 
-I love making all kinds of apps and have worked on over ten apps in four different App Store categories. Here's the [list of apps I worked on](/apps).
+Here's the [list of apps I worked on](/apps). I love making all kinds of apps and have worked on over ten apps in four different App Store categories. 
 
-[I write](/articles) about Objective-C, Cocoa Touch (I'll soon write about [Swift](https://developer.apple.com/swift/)!), and music-making apps. 
+This website also hosts the [articles](/articles) I write about iOS Development (and, recently, Docker), as well as details of [open-source libraries I work on](/libraries) and [talks](/talks) I give. 
 
-I have an MSc in Computer Science from University College London and a BSc in Philosophy, Logic & Scientific Method from the London School of Economics and Political Science.
+I love Hackathons (big fan of [Music Hackday](http://new.musichackday.org/)). My hacks won awards at Music Hack Day Barcelona and at [LMI For All Hack Day](http://rewiredstate.org/hacks/lmi-4-all-modding-day).
 
-I love Hackathons (big fan of [Music Hackday](http://new.musichackday.org/)). My hacks won awards at Music Hack Day Barcelona 2012 and at [LMI For All Hack Day](http://rewiredstate.org/hacks/lmi-4-all-modding-day).
+I studied Computer Science at University College London and Philosophy, Logic & Scientific Method at the London School of Economics and Political Science.
 
-I'm a beatboxer, I play bass guitar, I make music; you guessed it, I like to work with sound.
-
+<img style="float: center;" width="300" src="http://i.imgur.com/Ssr0ulo.jpg">

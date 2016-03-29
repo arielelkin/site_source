@@ -6,7 +6,6 @@ comments: true
 sharing: true
 footer: true
 ---
-
 # Easily sync and stream your entire music collection using Docker, ownCloud, and Ampache
 
 You like owning your music, but you own so many gigabytes of it that it's hard, if not impossible, to carry around. 
@@ -86,11 +85,10 @@ Depending on whether or not you've already pulled owncloud images, running this 
 ```
 Unable to find image 'owncloud:9' locally
 9: Pulling from library/owncloud
-
 Digest: sha256:55323ed9980e09e5eb5d21d605145e989c8e92d5fe3db31cfdd047efaf1832a0
+
 Status: Downloaded newer image for owncloud:9
 77e25848399e8b3b56f4cb23d5490155a16482f382ac690ae98fb999f8ab4f7e
-...
 ```
 
 When Docker is done building and running, you can check the ownCloud container is correctly running by asking Docker to list the last container you created:
@@ -158,7 +156,7 @@ And let's break that down:
 
 `docker run --name=ampache` Here we're pulling, building, and running a container with the Ampache, and we're naming it `ampache`. 
 
-`-v /owncloud_music/data/your_owncloud_username/files:/media:ro` This mounts the server's music directory we created before into the ampache container where ampache looks for music files. We add `:ro` option to specify that the mount should be read-only. Remember that the path to the music folder needs to be absolute. 
+`-v /owncloud_music/data/your_owncloud_username/files:/media:ro` This mounts the server's music directory we created before into the ampache container where ampache looks for music files. We add `:ro` option to specify that the mount should be read-only. Remember that the path to the music folder **must** be absolute. In this example, we assume that `owncloud_music` is at in the root directory `/`, but you should make sure that the path you place after the `-v`is the path you get when you run `pwd` in the `owncloud_music` directory. 
 
 `-p 2008:80` as above, this routes traffic coming and going to our server's port 2008, into Ampache's port 80. Again, I recommend port 2008 for technical reasons as it's the year that Will Bernard's _Blue Plate Special_ was released, with Stanton Moore on drums, you should listen to it. 
 
@@ -206,7 +204,7 @@ And... **Happy sync'n'streaming!**
 
 ## A note on ownCloud folder structure
 
-For the sake of simplicity, we instructed ownCloud to store both its own configuration files _and_ our music files into the same directory: `owncloud_music`becomes ownCloud's default volume at `/var/www/html`. You could have instead instructed Docker to mount an additional volume into the ownCloud container, where ownCloud could have save its configuration files:
+For the sake of simplicity, we instructed ownCloud to store both its own configuration files _and_ our music files into the same directory: `owncloud_music`becomes ownCloud's default volume at `/var/www/html`. You could have instead instructed Docker to mount an additional volume into the ownCloud container, in which ownCloud could have save its configuration files:
 
 ```
 $ docker run --name audiosync -v /home/your_username/owncloud_music_files:/var/www/html/data -v /home/your_username/owncloud_config_files:/var/www/html/config -p 1996:80 -d owncloud:9
@@ -220,6 +218,29 @@ If you think you missed a step and your ownCloud or Ampache container doesn't lo
 $ docker rm -f ampache
 $ docker rm -f audiosync
 ```
+
+## Where is Ampache's config file??
+
+```
+$ docker exec -ti ampache bash #let's go inside the ampache container
+$ cat /var/www/config/ampache.cfg.php
+```
+
+## Lossless files aren't streaming
+Lossless files aren't made for streaming, and need to be transcoded down to a lower bitrate for them to be streamed. By default, Ampache will silently fail to stream a lossless file, and you need to manually tell it to enable transcoding. 
+
+Find the `transcode_m4a` key in the file. It's the first key in the section of transcoding configurations. 
+
+Enabling transcoding consists in uncommenting the relevant lines, by removing the `;` from the beginning of the lines. First, find the formats you want to transcode and remove the the `;` from the line they're on. 
+
+Then, remove the `;` from the beginning of the following lines:
+```
+;encode_target = mp3
+;transcode_cmd = "avconv"
+```
+
+Lossless files should now stream, but at the default very low bitrate (32kbps). So in Ampache's Web Interface, go to Settings --> Streaming, and set the "Transcode Bitrate" to something acceptable like `256`. 
+
 
 ## Feedback
 
@@ -237,5 +258,4 @@ $ docker rm -f audiosync
 ## Acknowledgements 
 
 Thanks to [Jérôme Petazzoni](http://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft. 
-
 

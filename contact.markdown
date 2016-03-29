@@ -16,5 +16,5 @@ You can also find me on:
  * Twitter: [@AriVocals](https://twitter.com/AriVocals)
  * LinkedIn: [LinkedIn profile](https://www.linkedin.com/profile/view?id=10801329)
 
-##Work enquiries
+## Work enquiries
 I am not currently available for hire for iOS application development.

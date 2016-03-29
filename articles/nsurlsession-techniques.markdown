@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-##Introduction
+## Introduction
 
 In this article I'll offer some `NSURLSession` techniques to accomplish common networking functionality required in an app:
 
@@ -92,7 +92,7 @@ Here's the code:
 
 ```
 
-###Technique 1: Wrap NSURLSession
+### Technique 1: Wrap NSURLSession
 
 You can see that our networking code is inside a `Networker` class, isolated from other code, we didn't shove it inside, say, a `UIViewController` subclass.
 
@@ -100,7 +100,7 @@ You'll probably have more than one class in your app that needs data from the in
 
 This is based on the assumption that all classes that use `Networker` are satisfied with an `NSURLSession` being configured in a single way. But if we have more complex requirements in which, for example, two different classes using two different remote APIs need to use two different timeout intervals for their requests, you'll be better off making making a `Networker` subclass for each use case, in which you adequately override `dataSession`.
 
-###Technique 2: Provide the session via a static singleton method
+### Technique 2: Provide the session via a static singleton method
 
 `+[Networker dataSession]` is a static singleton method that returns a singleton `NSURLSession` object used for data fetches and file downloads. The more we centralise our networking, the easier it will be to control it. Advantages:
 
@@ -118,7 +118,7 @@ This is based on the assumption that all classes that use `Networker` are satisf
 
 ```
 
-###Technique 3: Provide a completion block as a method parameter
+### Technique 3: Provide a completion block as a method parameter
 
 This is partly a matter of style. When you're writing code that uses `Networker`, it tends to be more readable if the sequence of actions is clear.
 
@@ -160,7 +160,7 @@ The block-based alternative is shorter and more readable.
 Also, remember that calling a block that's `nil` results in a crash, so we check we do have a `completionHandler` before calling it.
 
 
-###Technique 4: Use class methods
+### Technique 4: Use class methods
 
 There is little use for `Networker` to have instance variables if it is going to be a single, centralised networking hub.
 
@@ -168,7 +168,7 @@ The main advantage of class methods is that it avoids other objects the hassle a
 
 Note that we are assuming that we are not required to report the progress of individual NSURLSessionTasks. If you're downloading potentially large and need to report the download progress to your users, then you need `Networker`
 
-###Trying it out
+### Trying it out
 
 We're going to put our `Networker` to the test, by using it on two free online APIs:
 * We'll use the Open Weather Map API to get temperature data for Kathmandu.

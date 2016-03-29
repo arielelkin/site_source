@@ -7,14 +7,14 @@ sharing: true
 footer: true
 ---
 
-##Introduction
+## Introduction
 In this article I'll explain how to easily fit a `UILabel` of variable height into a `UIScrollView` using Auto Layout. 
 
 Why? Because Auto Layout will make sure the label's `frame` and the scrollview's `contentSize` will be the ones you want, regardless of orientation and device size. No more calls to `sizeToFit` or `setContentSize`! 
 
 {% img http://i.imgur.com/Dogopki.png 200 %}
 
-##Code
+## Code
 
 You can go ahead and copy and paste this in an empty view controller to see in action:
 
@@ -58,30 +58,30 @@ You can go ahead and copy and paste this in an empty view controller to see in a
 
 ```
 
-##Explanation
+## Explanation
 
-###`@"H:|[scrollViewLabel(scrollView)]"`
+### `@"H:|[scrollViewLabel(scrollView)]"`
 
 This means: "The width of the label must be equal to the scrollview's width". 
 
 In AutoLayout, the `contentSize` of a scroll view is determined by the size of its subviews. So because the label is the scrollview's only subview, that constraint also implicitly means "Set the width of the scrollview's `contentsize` to the width of the label". 
 
-###`@"V:|[scrollViewLabel]|"`
+### `@"V:|[scrollViewLabel]|"`
 
 This means: "The height of the scrollview label must take up all the vertical space it needs within its superview. The scrollview's `contentSize`'s height must also be equal to it".
 
-##References aka Further Reading
+## References aka Further Reading
 
 
-###Articles
+### Articles
 
 * "Dynamic UILabel height inside UIScrollView with Autolayout" question on Stackoverflow. [Link](http://stackoverflow.com/questions/19192141/dynamic-uilabel-height-inside-uiscrollview-with-autolayout)
 
 
-###Documentation
+### Documentation
 
 * "Apple Technical Note TN2154: UIScrollView And Autolayout". *iOS Developer Library.* [Link](https://developer.apple.com/library/ios/technotes/tn2154/_index.html)
 
-###Filler Text
+### Filler Text
 
 * "Bacon Ipsum: A Meatier Lorem Ipsum Generator". [Link](http://baconipsum.com/)

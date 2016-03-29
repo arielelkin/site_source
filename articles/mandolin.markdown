@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-##Intro
+## Intro
 
 In this tutorial we'll explore a technique for making musical instrument apps on iOS, by combining two fantastic open-source libraries: The Amazing Audio Engine and the Synthesis Toolkit in C++. 
 
@@ -17,7 +17,7 @@ We'll need an audio *synthesizer* to generate the samples of audio in response t
 
 Our final result will be a handheld mandolin.
 
-##First steps
+## First steps
 
 1. Open up Xcode and create a new project.
 1. In "Choose a template for your new project":
@@ -42,7 +42,7 @@ Our final result will be a handheld mandolin.
 Let’s see if you’ve correctly added TAAE. Build (⌘+B), make sure the build succeeds. If the build fails, you haven’t followed the above steps to the letter, go back and make sure you do. If the build succeeds, you get to move on.
 
 
-##Our audio plumbing
+## Our audio plumbing
 
 We'll be generating our Mandolin sound within a *channel*, and we'll connect this channel directly to the *audio engine*. The audio engine gathers the sound it receives from all the channels connected to it, and sends it to the headphones or speaker. 
 
@@ -136,13 +136,13 @@ Let's break this down. First, we get a reference to our app delegate instance. I
 Then, we send a `start` message to the audioController, to tell it to start processing audio. `start` returns a `BOOL`: `YES` if it successfully started the audio engine, and `NO` otherwise. `start`'s only parameter is a pointer to an `NSError` object, and if an error occurs, the pointer is set to an error object containing the error information.  We want to be prepared for any errors; so we'll check `start`'s return value, if there's an error, print `errorAudioSetup`, let the user gracefully know, etc.
 
 
-##Add the STK
+## Add the STK
 
 If you’re using CocoaPods: add `pod 'STK'` to your podfile and run `pod install`. 
 
 If you’re not using CocoaPods: [visit this page](https://github.com/thestk/stk/blob/master/iOS/README-iOS.md) and follow the instructions there to add the STK to your project.
 
-##Building our mandolin
+## Building our mandolin
 
 STK source files are written in C++, so any source file that imports them must be Objective-C++. Rename **ViewController.m** to **ViewController.mm** so that it becomes Objective-C++.
 
@@ -152,14 +152,14 @@ Open **ViewController.mm** and under `#import "AppDelegate.h"`, write:
 #import "Mandolin.h"
 ```
 
-###Rawwaves
+### Rawwaves
 
 The `Mandolin` class we'll use makes use of hard-coded waveforms to generate sound. These waveforms are in the STK, but we need to manually tell the STK where they are. To do that, at the bottom of the `viewDidLoad` code we wrote, add this line:
 ```objective-c
 stk::Stk::setRawwavePath([[[NSBundle mainBundle] pathForResource:@"rawwaves" ofType:@"bundle"] UTF8String]);
 ```
 
-###The mandolin's user interface
+### The mandolin's user interface
 
 Let's now make the UI for the mandolin. The user will pluck the mandolin by pressing a button, and will change the mandolin's pitch by moving a slider. Open up the Storyboard, drag and drop a Button and a Slider onto the screen:
 
@@ -237,13 +237,13 @@ We first initialise a new `Mandolin` object, and set its frequency to 400.
 
 We then create an `AEBlockChannel`, which takes in a block as a parameter. This block, in turn, has parameters *in which* you have to store the audio you generate: we'll be generating audio one sample at a time and placing it in the audio buffers on their way to the headphones.
 
-###Understanding `tick()`
+### Understanding `tick()`
 
 STK classes have a `tick()` function which computes and generates one sample of audio; `myMandolin->tick()` returns consecutive samples of mandolin audio. 
 
 The STK classes compute and output one consecutive sample at a time, their `tick()` function returns one sample of computed audio, which we place in our audio buffers. The STK objects tick according to their state. So `tick()` returns `0` (i.e. silence) if we haven't plucked the mandolin, but if you pluck it it'll return a number higher or lower than `0`.
 
-###Understanding `AudioBuffers`
+### Understanding `AudioBuffers`
 
 The `for` loop places the output of `myMandolin->tick()` in the audio buffers. Let's take a closer look at how that works. 
 
@@ -255,7 +255,7 @@ The `frames` argument in the block specifies the number of samples in a buffer, 
 
 `Mandolin` produces mono sound, which is why we're placing its sample in both the left and the right channel. 
 
-##Outro
+## Outro
 
 Good musical apps often require synthesizers and audio engines. Making a speedy and robust audio engine requires a substantial amount of engineering, and delving into complex and unsavoury APIs. Making an interesting synthesizer also requires a good amount of basic audio engineering. 
 
@@ -271,15 +271,15 @@ Below is a screenshot of what it could look like. The green button pucks the man
 
 {%img http://i.imgur.com/kZ69wSv.png 250 %}
 
-##Sample project
+## Sample project
 To see what this looks like when complete, check out this sample project: [The Mandolin on GitHub](https://github.com/arielelkin/Mandolin)
 
 
-##Further reading
+## Further reading
 * [`Mandolin`'s Documentation](https://ccrma.stanford.edu/software/stk/classstk_1_1Mandolin.html)
   * There are many more things you can do with the mandolin, read this thoroughly.
 * [The Amazing Audio Engine Documentation](http://theamazingaudioengine.com/doc/)
 
-##Thanks to
+## Thanks to
 * [Michael Tyson](http://atastypixel.com/) for useful pointers on developing with TAAE. 
 * Daniel Kent and Péter Gyurkó for helping develop this tutorial.
