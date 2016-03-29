@@ -6,7 +6,6 @@ comments: true
 sharing: true
 footer: true
 ---
-# Easily sync and stream your entire music collection using Docker, ownCloud, and Ampache
 
 You like owning your music, but you own so many gigabytes of it that it's hard, if not impossible, to carry around. 
 
