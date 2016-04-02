@@ -59,7 +59,7 @@ $ pwd
 
 The directory doesn't need to be in your home folder, but it should be somewhere where you're not likely to move it around. For the rest of this tutorial, we'll assume that `/home/your_username/owncloud_music` is the absolute path of your music directory. 
 
-1. Install an ownCloud instance on your server, mount the above directory onto it as a data volume:
+Install an ownCloud instance on your server, mount the above directory onto it as a data volume:
 
 ```
 $ docker run --name audiosync -v /home/your_username/owncloud_music:/var/www/html -p 1996:80 -d owncloud:9
@@ -69,7 +69,7 @@ Let's break down the above command.
 
 `docker run` tells docker to pull the ownCloud image and its dependencies, build it, and start the container from that image with a particular set of options that I'll get into more detail below:
 
-`--name audiosync` allows us to name our container in order to be able to refer to it more easily. We could have several owncloud instances running, but this one's dedicated to synchronizing our audio, so let's call it `audiosync`. 
+`--name audiosync` allows us to name our container in order to be able to refer to it more easily. We could have several ownCloud instances running, but this one's dedicated to synchronizing our audio, so let's call it `audiosync`. 
 
 `-v /home/your_username/owncloud_music:/var/www/html` is the money shot. This mounts the music directory we created before into the ownCloud container at `/var/www/html`, which is the directory _within the ownCloud container_ where ownCloud stores its data and local configuration. ownCloud is under the impression of running in its own lonely operating system, yet little does it know, it's writing directly onto our server filesystem. Make sure you pass in the absolute path to the music directory. 
 
@@ -77,9 +77,9 @@ Let's break down the above command.
 
 `-d` starts the container in detached mode. This runs the container in the background rather than in the foreground. 
 
-`owncloud:9` is the particular version of owncloud we want. This pulls the official ownCloud image from Docker Hub.
+`owncloud:9` is the particular version of ownCloud we want. This pulls the official ownCloud image from Docker Hub.
 
-Depending on whether or not you've already pulled owncloud images, running this command should give you an output similar to this:
+Depending on whether or not you've already pulled ownCloud images, running this command should give you an output similar to this:
 
 ```
 Unable to find image 'owncloud:9' locally
@@ -147,6 +147,7 @@ You now need root privileges to `cd` into the `owncloud_music` directory. Run `s
 Copy that path.
 
 OK, now let's setup the streamer. Run this command:
+
 ```
 $ docker run --name=ampache -v /owncloud_music/data/your_owncloud_username/files:/media:ro -p 2008:80 -d ampache/ampache
 ```
@@ -233,6 +234,7 @@ Find the `transcode_m4a` key in the file. It's the first key in the section of t
 Enabling transcoding consists in uncommenting the relevant lines, by removing the `;` from the beginning of the lines. First, find the formats you want to transcode and remove the the `;` from the line they're on. 
 
 Then, remove the `;` from the beginning of the following lines:
+
 ```
 ;encode_target = mp3
 ;transcode_cmd = "avconv"
@@ -258,3 +260,7 @@ Lossless files should now stream, but at the default very low bitrate (32kbps). 
 
 Thanks to [Jérôme Petazzoni](http://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft. 
 
+And thank you [@Docker](https://www.twitter.com/docker) for the shout out:
+
+<blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Easily sync and stream your entire music collection using <a href="https://twitter.com/docker">@docker</a> <a href="https://t.co/B5VsFZGdXC">https://t.co/B5VsFZGdXC</a> by <a href="https://twitter.com/AriVocals">@AriVocals</a> <a href="https://t.co/UMUfl9bEgj">pic.twitter.com/UMUfl9bEgj</a></p>&mdash; Docker (@docker) <a href="https://twitter.com/docker/status/714902207024525312">March 29, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
