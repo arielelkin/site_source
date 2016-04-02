@@ -29,7 +29,8 @@ Our final result will be a handheld mandolin.
     1. Under "Devices", select **iPhone**.
 1. Click **Next** and save the project somewhere dear to you.
 
-##Add the Amazing Audio Engine
+## Add the Amazing Audio Engine
+
 1. Add The Amazing Audio Engine to your project. 
     1. **If you're using CocoaPods:** add `pod 'TheAmazingAudioEngine'` to your podfile and run `pod install`. Remember to close **Mandolin.xcodeproj** and use **Mandolin.xcworkspace** instead. 
     1. **If you're not using CocoaPods:** [visit this page](http://theamazingaudioengine.com/doc/_getting-_started.html) and follow steps 1-6 to the letter. 
@@ -56,6 +57,7 @@ Open **AppDelegate.h**, write this above `#import <UIKit/UIKit.h>`:
 ```objective-c
 @class AEAudioController;
 ```
+
 This is a [forward declaration](http://stackoverflow.com/questions/5191487/objective-c-forward-class-declaration) of `AEAudioController`. We'll be importing **AEAudioController.h** in the app delegate's implementation (it's cleaner to import it here to avoid circular inclusions of files). 
 
 Let's now add an `AEAudioController` property to our `AppDelegate`:
@@ -79,6 +81,7 @@ Open **AppDelegate.m**. Under the `#import "AppDelegate.h"` line we wrote earlie
 This is a [class extension](https://developer.apple.com/library/ios/documentation/cocoa/conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html) in which we allow the implementation of AppDelegate to actually set its `audioController` property. 
 
 At the end of the `application:didFinishLaunchingWithOptions` method, write:
+
 ```objective-c
 self.audioController = [[AEAudioController alloc]
                         initWithAudioDescription:[AEAudioController nonInterleavedFloatStereoAudioDescription]
@@ -110,6 +113,7 @@ Your **AppDelegate.m** should look like this:
 ```
     
 We'll now start the audio engine in the main view controller. Open up **ViewController.m**. Under `#import "ViewController.h"`, write:
+
 ```objective-c
 #import "AppDelegate.h"
 ```
@@ -147,6 +151,7 @@ If you’re not using CocoaPods: [visit this page](https://github.com/thestk/stk
 STK source files are written in C++, so any source file that imports them must be Objective-C++. Rename **ViewController.m** to **ViewController.mm** so that it becomes Objective-C++.
 
 Open **ViewController.mm** and under `#import "AppDelegate.h"`, write: 
+
 ```objective-c
 #import "AEBlockChannel.h"
 #import "Mandolin.h"
@@ -155,6 +160,7 @@ Open **ViewController.mm** and under `#import "AppDelegate.h"`, write:
 ### Rawwaves
 
 The `Mandolin` class we'll use makes use of hard-coded waveforms to generate sound. These waveforms are in the STK, but we need to manually tell the STK where they are. To do that, at the bottom of the `viewDidLoad` code we wrote, add this line:
+
 ```objective-c
 stk::Stk::setRawwavePath([[[NSBundle mainBundle] pathForResource:@"rawwaves" ofType:@"bundle"] UTF8String]);
 ```
@@ -201,7 +207,7 @@ Do the same for the slider. Leave `control` pressed and click and drag from the 
 
 Those are the basics of our UI.
 
-##The mandolin's back-end
+## The mandolin's back-end
 
 In **ViewController.mm**, add an instance variable for our `AEBlockChannel`:
 
