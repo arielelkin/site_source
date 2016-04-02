@@ -15,6 +15,9 @@ twitter_username: AriVocals
 github_username:  arielelkin
 disqus: arielelkin
 
+exclude:
+  - workspace.xcworkspace
+
 # Build settings
 markdown: kramdown
 kramdown:
