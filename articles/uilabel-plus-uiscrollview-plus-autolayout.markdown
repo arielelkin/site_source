@@ -8,7 +8,7 @@ footer: true
 ---
 
 ## Introduction
-In this article I'll explain how to easily fit a `UILabel` of variable height into a `UIScrollView` using Auto Layout. 
+In this article I'll explain how to easily fit a `UILabel` of variable height into a `UIScrollView` using Auto Layout, for those scenarios where a `UITextView` won't do.
 
 Why? Because Auto Layout will make sure the label's `frame` and the scrollview's `contentSize` will be the ones you want, regardless of orientation and device size. No more calls to `sizeToFit` or `setContentSize`! 
 
