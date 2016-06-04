@@ -6,23 +6,33 @@ sharing: false
 footer: false
 ---
 
+## Evino
+
+Brazil's first and most highly-rated wine e-commerce app. Offers smooth catalog browsing, dynamic campaigns advertising, push notifications of flash sales, and easy checkout process. 
+
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/F53T9/embed"></iframe>
+
+* [App Store Link](https://itunes.apple.com/us/app/evino-compre-vinho-online/id1008719792?mt=8)
+* [App's website](http://www.evino.com.br/)
+
+
 ## Eyegroove
 
 Create and share short music videos with visual effects. Share them with the community. I worked on user interface implementation. 
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/Idf18/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/Idf18/embed"></iframe>
 
 * [App Store Link](https://itunes.apple.com/us/app/playvuu/id794139886?mt=8)
 * [App's website](https://www.eyegroove.com/)
 
 ### Client
-[{% img http://i.imgur.com/qrTr4vS.png 200 %}](https://www.eyegroove.com/)
+[{% img https://i.imgur.com/qrTr4vS.png 200 %}](https://www.eyegroove.com/)
 
 ## PunHusky Comedy Club
 
 A virtual comedy club, with three comedians telling you jokes live. Jokes are picked from the best online sources, and delivered with style. This was a personal project to experiment with computer-generated comedy. 
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/TSBUL/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/TSBUL/embed"></iframe>
 
 * [App Store Link](https://itunes.apple.com/us/app/playvuu/id921438876?mt=8)
 
@@ -31,26 +41,26 @@ A virtual comedy club, with three comedians telling you jokes live. Jokes are pi
 
 Add real-time effects, animation, and frames to your videos. Uses GPU-accelerated filters on live camera video. Share videos via text, Facebook, Twitter, or Email. I worked mainly on user interface implementation. 
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/yhsqc/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/yhsqc/embed"></iframe>
 
 * [App Store Link](https://itunes.apple.com/us/app/playvuu/id816042079?mt=8)
-* [App's website](http://playvuu.com/)
+* [App's website](https://playvuu.com/)
 
 ### Client
-[{% img http://i.imgur.com/JpJlxn0.jpg 200 %}](http://playvuu.com/)
+[{% img https://i.imgur.com/JpJlxn0.jpg 200 %}](https://playvuu.com/)
 
 ## Video Pass
 
 On-demand video streaming service. Template-based user interface building. Digital rights management. I worked on user interface implementation and networking tasks. 
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/gFPIH/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/gFPIH/embed"></iframe>
 
 * [App Store Link](https://itunes.apple.com/jp/app/bideopasu/id561854152?mt=8)
-* [App's website](http://www.videopass.jp/) (not accessible from outside Japan)
+* [App's website](https://www.videopass.jp/) (not accessible from outside Japan)
 
 ### Client
 
-[{% img http://i.imgur.com/AEPnXUg.jpg 200 %}](http://www.saffrondigital.com/)
+[{% img https://i.imgur.com/AEPnXUg.jpg 200 %}](https://www.saffrondigital.com/)
 
 
 
@@ -60,15 +70,15 @@ View smiling human faces at regular intervals, track your mood changes as part o
 
 I focused on in-app scientific data collection, and App analytics.
 
-<iframe class="imgur-album" width="340" height="600" frameborder="0" src="http://imgur.com/a/tNQ8h/embed"></iframe>
+<iframe class="imgur-album" width="340" height="600" frameborder="0" src="https://imgur.com/a/tNQ8h/embed"></iframe>
 
-* [App's website](http://www.pocketsmile.icn.ucl.ac.uk/website/)
+* [App's website](https://www.pocketsmile.icn.ucl.ac.uk/website/)
 * [App Store Link](https://itunes.apple.com/us/app/pocket-smile/id709226955?mt=8)
 
 
 ### Client 
 
-[{% img http://i.imgur.com/8qK42JZ.jpg 200 %}](http://www.icn.ucl.ac.uk/)
+[{% img https://i.imgur.com/8qK42JZ.jpg 200 %}](https://www.icn.ucl.ac.uk/)
 
 
 ## NinjaJamm
@@ -77,9 +87,9 @@ Download original music from Ninja Tune’s catalogue. Remix it using novel musi
 
 I focused on User Interface implementation, and In-App purchases.
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/ye5Vl/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/ye5Vl/embed"></iframe>
 
-* [App's website](http://ninjajamm.com/)
+* [App's website](https://ninjajamm.com/)
 * [App Store Link](https://itunes.apple.com/us/app/ninja-jamm-ninja-tune-remix/id533809331?mt=8)
 
 ### Featured in
@@ -88,13 +98,13 @@ I focused on User Interface implementation, and In-App purchases.
 * *BBC Music App of the Week*
 * *Create Digital Music*
 
-[Digital DJ Tips](http://www.digitaldjtips.com/) says:
+[Digital DJ Tips](https://www.digitaldjtips.com/) says:
 
 >""Ninja Jamm is another example of creative thinking; this is another way for us to consume the music we love, creating something new as a result. We’ve seen several other remix apps before, however Ninja Jamm feels like the best and carefully thought out app so far."
 
 ### Clients
-[{% img http://i.imgur.com/EeuE2X8.jpg 100 %}](http://ninjatune.net/)
-[{% img http://i.imgur.com/XUr4XQP.png 200 %}](http://seeper.com/)
+[{% img https://i.imgur.com/EeuE2X8.jpg 100 %}](https://ninjatune.net/)
+[{% img https://i.imgur.com/XUr4XQP.png 200 %}](https://seeper.com/)
 
 
 
@@ -102,11 +112,11 @@ I focused on User Interface implementation, and In-App purchases.
 
 Follow Clara’s adventure around the Victoria and Albert Museum in an interactive children’s book. My role was technical lead. I worked on over 200 interactive animations, as well as voice recording and playback. 
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/Kza1a/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/Kza1a/embed"></iframe>
 
 Animated finger tracking and hidden interactive elements. Roll your finger over the screen to watch buttons fly, move the iPad to spin buttons (and Ollie!) and keep exploring every page for hidden treats.
 
-* [App's website](http://mappeditions.com/clarabutton/)
+* [App's website](https://mappeditions.com/clarabutton/)
 * [App Store Link](https://itunes.apple.com/us/app/clara-button-magical-hat-day/id543867176?mt=8)
 
 ### Featured in
@@ -118,18 +128,18 @@ Animated finger tracking and hidden interactive elements. Roll your finger over 
 
 Mapp Editions for the Victoria & Albert Museum.
 
-[{% img http://i.imgur.com/NmJdldu.png 150 %}](http://mappeditions.com/)
-[{% img http://i.imgur.com/QKWmDAT.jpg 200 %}](http://www.vam.ac.uk/)
+[{% img https://i.imgur.com/NmJdldu.png 150 %}](https://mappeditions.com/)
+[{% img https://i.imgur.com/QKWmDAT.jpg 200 %}](https://www.vam.ac.uk/)
 
 ## Titanic Calling
 
 Titanic Calling offers an unusual insight into the final hours of Titanic, a visceral, real time experience of the Morse code signals transmitted between Titanic and nearby vessels summoned to her relief, against the backdrop of a map of the Atlantic ocean showing the trajectory of the ships and the movement of dawn towards the site of the tragedy.
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/MwiIy/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/MwiIy/embed"></iframe>
 
 The app uses a morse code generator featuring custom-made sound synthesisers that enable viewers to hear as well as watch the messages being transmitted.
 
-* [App's website](http://mappeditions.com/publications/titanic-calling)
+* [App's website](https://mappeditions.com/publications/titanic-calling)
 * [App Store Link](https://itunes.apple.com/us/app/titanic-calling/id514919851?mt=8)
 
 ### Featured in
@@ -139,8 +149,8 @@ The app uses a morse code generator featuring custom-made sound synthesisers tha
 
 Mapp Editions for the Bodleian Library
 
-[{% img http://i.imgur.com/NmJdldu.png 150 %}](http://mappeditions.com/)
-[{% img http://i.imgur.com/PrUoDFj.png 325 %}](http://www.bodleian.ox.ac.uk/bodley)
+[{% img https://i.imgur.com/NmJdldu.png 150 %}](https://mappeditions.com/)
+[{% img https://i.imgur.com/PrUoDFj.png 325 %}](https://www.bodleian.ox.ac.uk/bodley)
 
 
 
@@ -152,14 +162,14 @@ NYLPT is a result of Evans's compulsive visual collecting alongside an informed 
 
 I worked on the app's architecture, development, sound design, and testing. 
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/0VKwI/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/0VKwI/embed"></iframe>
 
-* [App's website](http://mappeditions.com/publications/nylpt)
+* [App's website](https://mappeditions.com/publications/nylpt)
 * [App Store Link](https://itunes.apple.com/us/app/nylpt/id571340172?mt=8)
 
 ### Made at
 
-[{% img http://i.imgur.com/NmJdldu.png 200 %}](http://mappeditions.com/)
+[{% img https://i.imgur.com/NmJdldu.png 200 %}](https://mappeditions.com/)
 
 
 ##iPad app for the Paul Graham Exhibition at Le Bal Gallery
@@ -168,13 +178,13 @@ In association with Le Bal gallery in Paris, we developed an app to view six of 
 
 I worked on the app's architecture, development, and testing. 
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/pBEgA/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/pBEgA/embed"></iframe>
 
-* [App's website](http://mappeditions.com/publications/paul-graham-at-le-bal)
+* [App's website](https://mappeditions.com/publications/paul-graham-at-le-bal)
 
 ### Made at
 
-[{% img http://i.imgur.com/NmJdldu.png 200 %}](http://mappeditions.com/)
+[{% img https://i.imgur.com/NmJdldu.png 200 %}](https://mappeditions.com/)
 
 
 ## Blood Earth
@@ -183,31 +193,31 @@ Word Sound Power, formed in 2010, is a New Delhi based collective that construct
 
 I worked on the app's architecture, development, and audio engine. 
 
-<iframe class="imgur-album" width="480" height="420" frameborder="0" src="http://imgur.com/a/MlaXo/embed"></iframe>
+<iframe class="imgur-album" width="480" height="420" frameborder="0" src="https://imgur.com/a/MlaXo/embed"></iframe>
 
-* [App Video](http://youtu.be/iS0WvQFFJ48)
+* [App Video](https://youtu.be/iS0WvQFFJ48)
 
 ### Client
-[{% img http://i.imgur.com/tiLtJIL.png 200 %}](http://jazzsteppa.co.uk/)
+[{% img https://i.imgur.com/tiLtJIL.png 200 %}](https://jazzsteppa.co.uk/)
 
 
 ## AudioSteam
 
 You've just inherited a most peculiar device from a relative you had long forgotten about. Your family had always said your Great Uncle was a mad man who dabbled in Sonic Alchemy. Obsessed with harassing sounds of an unearthly origin which he called "taming the audio steam"
 
-Personal project done in collaboration with [Justin Marazita](http://marazita.com/).
+Personal project done in collaboration with [Justin Marazita](https://marazita.com/).
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/mfusP/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/mfusP/embed"></iframe>
 
-* [App's website](http://www.marazita.com/audiosteam.html)
+* [App's website](https://www.marazita.com/audiosteam.html)
 * [App Store Link](https://itunes.apple.com/us/app/audiosteam/id526543006?mt=8)
 
 ## AriVibes
 
 Perform realtime manipulatations over sound picked up by your device's microphone. Record and repeat the sounds you send into it, allowing you to easily build musical phrases and compositions. Make objects sound more percussive. Your tap on a table can have the bass of a kick drum or the brilliance of a hi-hat.
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="http://imgur.com/a/6zlCX/embed"></iframe>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/6zlCX/embed"></iframe>
 
-* [App's website](http://arivibes.com/)
+* [App's website](https://arivibes.com/)
 * [App Store Link](https://itunes.apple.com/us/app/arivibes/id497947030?mt=8)
 
