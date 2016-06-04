@@ -7,7 +7,8 @@ comments: false
 ## Talks and Workshops
 
 * "The Worst Myths of Software Engineering Ethics" at [Project A Ventures](http://www.project-a.com/). 
-* "An Introduction To Blockchain Technology and Its Applications" at [Project A Ventures](http://www.project-a.com/). 
+* "An Introduction To Blockchain Technology and Its Applications" at [Project A Ventures](http://www.project-a.com/).
+* "Using Swift enums with `UICollectionView` and `UITableView`" at [swift.berlin](http://www.meetup.com/swift-berlin/events/226908584/).
 * "Real-time Audio Using Swift" at Cocoaheads Berlin. [Slides and links](http://faturl.com/swiftyaudio)
 * "Audio Synthesis on iOS" at [Barcelona iOS Developers Meetup](http://www.meetup.com/nsbarcelona/events/122146782/)
 * "Introduction to iOS Development Workshop" at [General Assembly, London](https://generalassemb.ly/education/introduction-to-ios-development/london)
