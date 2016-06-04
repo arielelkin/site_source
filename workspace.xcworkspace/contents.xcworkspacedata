@@ -1,220 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:"
-      name = "">
-      <FileRef
-         location = "group:_config.yml">
-      </FileRef>
-      <Group
-         location = "group:_includes"
-         name = "_includes">
-         <FileRef
-            location = "group:disqus.html">
-         </FileRef>
-         <FileRef
-            location = "group:footer.html">
-         </FileRef>
-         <FileRef
-            location = "group:google_analytics.html">
-         </FileRef>
-         <FileRef
-            location = "group:head.html">
-         </FileRef>
-         <FileRef
-            location = "group:header.html">
-         </FileRef>
-         <FileRef
-            location = "group:icon-github.html">
-         </FileRef>
-         <FileRef
-            location = "group:icon-github.svg">
-         </FileRef>
-         <FileRef
-            location = "group:icon-twitter.html">
-         </FileRef>
-         <FileRef
-            location = "group:icon-twitter.svg">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:_layouts"
-         name = "_layouts">
-         <FileRef
-            location = "group:default.html">
-         </FileRef>
-         <FileRef
-            location = "group:page.html">
-         </FileRef>
-         <FileRef
-            location = "group:post.html">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:_posts"
-         name = "_posts">
-         <FileRef
-            location = "group:2016-03-29-welcome-to-jekyll.markdown">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:_sass"
-         name = "_sass">
-         <FileRef
-            location = "group:_base.scss">
-         </FileRef>
-         <FileRef
-            location = "group:_layout.scss">
-         </FileRef>
-         <FileRef
-            location = "group:_syntax-highlighting.scss">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:_site"
-         name = "_site">
-         <FileRef
-            location = "group:apps.html">
-         </FileRef>
-         <Group
-            location = "group:articles"
-            name = "articles">
-            <FileRef
-               location = "group:easily-sync-and-stream-your-entire-music-collection-using-docker.html">
-            </FileRef>
-            <FileRef
-               location = "group:index.html">
-            </FileRef>
-            <FileRef
-               location = "group:mandolin.html">
-            </FileRef>
-            <FileRef
-               location = "group:nsurlsession-techniques.html">
-            </FileRef>
-            <FileRef
-               location = "group:objective-c-multicast-delegate.html">
-            </FileRef>
-            <FileRef
-               location = "group:uilabel-plus-uiscrollview-plus-autolayout.html">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:contact.html">
-         </FileRef>
-         <FileRef
-            location = "group:cooking.html">
-         </FileRef>
-         <Group
-            location = "group:css"
-            name = "css">
-            <FileRef
-               location = "group:main.css">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:favicon.png">
-         </FileRef>
-         <FileRef
-            location = "group:feed.xml">
-         </FileRef>
-         <FileRef
-            location = "group:Gemfile">
-         </FileRef>
-         <FileRef
-            location = "group:Gemfile.lock">
-         </FileRef>
-         <FileRef
-            location = "group:index.html">
-         </FileRef>
-         <Group
-            location = "group:jekyll"
-            name = "jekyll">
-            <Group
-               location = "group:update"
-               name = "update">
-               <Group
-                  location = "group:2016"
-                  name = "2016">
-                  <Group
-                     location = "group:03"
-                     name = "03">
-                     <Group
-                        location = "group:29"
-                        name = "29">
-                        <FileRef
-                           location = "group:welcome-to-jekyll.html">
-                        </FileRef>
-                     </Group>
-                  </Group>
-               </Group>
-            </Group>
-         </Group>
-         <FileRef
-            location = "group:libraries.html">
-         </FileRef>
-         <FileRef
-            location = "group:talks.html">
-         </FileRef>
-         <FileRef
-            location = "group:workspace.xcworkspace">
-         </FileRef>
-      </Group>
-      <FileRef
-         location = "group:apps.markdown">
-      </FileRef>
-      <Group
-         location = "group:articles"
-         name = "articles">
-         <FileRef
-            location = "group:easily-sync-and-stream-your-entire-music-collection-using-docker.md">
-         </FileRef>
-         <FileRef
-            location = "group:index.markdown">
-         </FileRef>
-         <FileRef
-            location = "group:mandolin.markdown">
-         </FileRef>
-         <FileRef
-            location = "group:nsurlsession-techniques.markdown">
-         </FileRef>
-         <FileRef
-            location = "group:objective-c-multicast-delegate.markdown">
-         </FileRef>
-         <FileRef
-            location = "group:uilabel-plus-uiscrollview-plus-autolayout.markdown">
-         </FileRef>
-      </Group>
-      <FileRef
-         location = "group:contact.markdown">
-      </FileRef>
-      <FileRef
-         location = "group:cooking.markdown">
-      </FileRef>
-      <Group
-         location = "group:css"
-         name = "css">
-         <FileRef
-            location = "group:main.scss">
-         </FileRef>
-      </Group>
-      <FileRef
-         location = "group:favicon.png">
-      </FileRef>
-      <FileRef
-         location = "group:Gemfile">
-      </FileRef>
-      <FileRef
-         location = "group:Gemfile.lock">
-      </FileRef>
-      <FileRef
-         location = "group:index.markdown">
-      </FileRef>
-      <FileRef
-         location = "group:libraries.markdown">
-      </FileRef>
-      <FileRef
-         location = "group:talks.md">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:_includes">
+   </FileRef>
+   <FileRef
+      location = "group:_layouts">
+   </FileRef>
+   <FileRef
+      location = "group:_sass">
+   </FileRef>
+   <FileRef
+      location = "group:_site">
+   </FileRef>
+   <FileRef
+      location = "group:articles">
+   </FileRef>
+   <FileRef
+      location = "group:css">
+   </FileRef>
+   <FileRef
+      location = "group:favicon.png">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile">
+   </FileRef>
+   <FileRef
+      location = "group:Gemfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:_config.yml">
+   </FileRef>
+   <FileRef
+      location = "group:apps.markdown">
+   </FileRef>
+   <FileRef
+      location = "group:contact.markdown">
+   </FileRef>
+   <FileRef
+      location = "group:cooking.markdown">
+   </FileRef>
+   <FileRef
+      location = "group:index.markdown">
+   </FileRef>
+   <FileRef
+      location = "group:libraries.markdown">
+   </FileRef>
+   <FileRef
+      location = "group:talks.md">
+   </FileRef>
 </Workspace>
