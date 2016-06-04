@@ -10,11 +10,13 @@ footer: false
 
 Brazil's first and most highly-rated wine e-commerce app. Offers smooth catalog browsing, dynamic campaigns advertising, push notifications of flash sales, and easy checkout process. 
 
-<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/F53T9/embed"></iframe>
+<div>
+<iframe class="imgur-album" width="340" height="500" frameborder="0" src="https://imgur.com/a/F53T9/embed">
+</iframe>
+</div>
 
 * [App Store Link](https://itunes.apple.com/us/app/evino-compre-vinho-online/id1008719792?mt=8)
 * [App's website](http://www.evino.com.br/)
-
 
 ## Eyegroove
 
