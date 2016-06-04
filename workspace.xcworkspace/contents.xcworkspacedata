@@ -202,9 +202,6 @@
          location = "group:favicon.png">
       </FileRef>
       <FileRef
-         location = "group:feed.xml">
-      </FileRef>
-      <FileRef
          location = "group:Gemfile">
       </FileRef>
       <FileRef
