@@ -7,7 +7,7 @@ footer: false
 
 I'm an iOS developer, this is my website.
 
-I work for [Project A Ventures](http://www.project-a.com/) in Berlin. 
+I work for [Project A Ventures](https://www.project-a.com/) in Berlin. 
 
 Here's the [list of apps I worked on](/apps). I love making all kinds of apps and have worked on over ten apps in four different App Store categories. 
 
@@ -17,4 +17,4 @@ I love Hackathons (big fan of [Music Hackday](http://new.musichackday.org/) and 
 
 I studied Computer Science at University College London. Prior to that, I studied Philosophy, Logic & Scientific Method at the London School of Economics and Political Science. 
 
-<img style="float: center;" width="300" src="http://i.imgur.com/Ssr0ulo.jpg">
+<img style="float: center;" width="300" src="https://i.imgur.com/Ssr0ulo.jpg">
