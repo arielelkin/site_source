@@ -12,7 +12,7 @@ In this article I'll explain how to easily fit a `UILabel` of variable height in
 
 Why? Because Auto Layout will make sure the label's `frame` and the scrollview's `contentSize` will be the ones you want, regardless of orientation and device size. No more calls to `sizeToFit` or `setContentSize`! 
 
-{% img http://i.imgur.com/Dogopki.png 200 %}
+{% img https://i.imgur.com/Dogopki.png 200 %}
 
 ## Code
 
