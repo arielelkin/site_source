@@ -98,7 +98,7 @@ $ docker ps -l
 
 Next, open your web browser, and go to `http://yourdomain.com:1996`
 
-![](http://i.imgur.com/nza2Lar.png)
+![](https://i.imgur.com/nza2Lar.png)
 
 Create a username and password for your ownCloud account, and you should be in!
 
@@ -125,18 +125,18 @@ to this:
 ```
 
 Now, [install the ownCloud desktop client on your personal computer](https://owncloud.org/install/). Add an account:
-![](http://i.imgur.com/rUD11j2.png)
+![](https://i.imgur.com/rUD11j2.png)
 
 Now tell the ownCloud client where your music folder is, make sure you select "Keep local data", and click **Connect...**:
-![](http://i.imgur.com/fMJrrxj.png)
+![](https://i.imgur.com/fMJrrxj.png)
 
 "Everything set up", as far as ownCloud is concerned, you can click "Finish".
 
-![](http://i.imgur.com/OgXfJ5O.png)
+![](https://i.imgur.com/OgXfJ5O.png)
 
 
 ownCloud should have now started uploading your music to your server:
-![](http://i.imgur.com/NIte8sz.png)
+![](https://i.imgur.com/NIte8sz.png)
 
 The `Documents` and `Photos` folders are created by default by ownCloud, you can delete them. 
 
@@ -166,7 +166,7 @@ Once Ampache has been pulled and built, open your web browser and visit `yourdom
 
 You'll be greeted with Ampache's installation wizard:
 
-![](http://i.imgur.com/dGEfcZz.png) 
+![](https://i.imgur.com/dGEfcZz.png) 
 
 Click "Start Configuration". 
 
@@ -188,17 +188,17 @@ Now click on the File Insight menu, and click on the "Write" button
 
 In the next page, create your Ampache (admin) user account. Pick a username and a password, click "Create Account". Now you can login into Ampache!
 
-![](http://i.imgur.com/mWk5MgC.png)
+![](https://i.imgur.com/mWk5MgC.png)
 
 Ampache now needs you to add a Catalog for it to start building your music collection. Click on the second button from the left, the one next to the door:
 
-![](http://i.imgur.com/TRIZYrb.png)
+![](https://i.imgur.com/TRIZYrb.png)
 
 Now select "Add a Catalog" from the menu below. 
 
 Select "local" as the Catalog Type, and fill in `/media/` as the path to the music. You can then "Add Catalog". Wait for the Catalog to finish building, and your music is ready for streaming! Click on the headphones icon on the top right of the left column, and you can Browse Music. If ownCloud has already uploaded music to your server, they will be there:
 
-![](http://i.imgur.com/pAnbhAr.png)
+![](https://i.imgur.com/pAnbhAr.png)
 
 And... **Happy sync'n'streaming!**
 
@@ -258,7 +258,7 @@ Lossless files should now stream, but at the default very low bitrate (32kbps). 
 
 ## Acknowledgements 
 
-Thanks to [Jérôme Petazzoni](http://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft. 
+Thanks to [Jérôme Petazzoni](https://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft. 
 
 And thank you [@Docker](https://www.twitter.com/docker) for the shout out:
 
