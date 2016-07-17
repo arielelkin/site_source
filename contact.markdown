@@ -5,7 +5,7 @@ comments: false
 sharing: false
 footer: false
 ---
-{% img right http://i.imgur.com/L8vfMtN.png %}
+{% img right https://i.imgur.com/L8vfMtN.png %}
 
 The best way to reach me is via email:
 ariel elkin at g mail dot com
