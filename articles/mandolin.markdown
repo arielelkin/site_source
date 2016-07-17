@@ -169,7 +169,7 @@ stk::Stk::setRawwavePath([[[NSBundle mainBundle] pathForResource:@"rawwaves" ofT
 
 Let's now make the UI for the mandolin. The user will pluck the mandolin by pressing a button, and will change the mandolin's pitch by moving a slider. Open up the Storyboard, drag and drop a Button and a Slider onto the screen:
 
-{% img http://i.imgur.com/RDFxrAI.png %}
+{% img https://i.imgur.com/RDFxrAI.png %}
 
 A mandolin's frequency usually varies between 200Hz and 3000Hz, but by default `UISliders` send values between `0` to `1`. So we want the slider's minimum and maximum values to reflect that. Click on the slider, then click on the fourth button at the top of the inspector pane on the right. Set "Minimum" to **200** and set "Maximum" to **1000** (yes, we could set this to **3000** as mandolins do go above 1000Hz, but for our prototyping purposes **1000** is fine). Set "Current" to **400**.
 
