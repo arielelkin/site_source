@@ -173,7 +173,7 @@ Let's now make the UI for the mandolin. The user will pluck the mandolin by pres
 
 A mandolin's frequency usually varies between 200Hz and 3000Hz, but by default `UISliders` send values between `0` to `1`. So we want the slider's minimum and maximum values to reflect that. Click on the slider, then click on the fourth button at the top of the inspector pane on the right. Set "Minimum" to **200** and set "Maximum" to **1000** (yes, we could set this to **3000** as mandolins do go above 1000Hz, but for our prototyping purposes **1000** is fine). Set "Current" to **400**.
 
-{% img http://imgur.com/sBLC5dn.png %}
+{% img https://imgur.com/sBLC5dn.png %}
 
 Open **ViewController.mm** and add an instance variable for our `Mandolin`:
 
@@ -275,7 +275,7 @@ Speaking of which, here are some pretty assets to get you started. They've been 
 
 Below is a screenshot of what it could look like. The green button pucks the mandolin.
 
-{%img http://i.imgur.com/kZ69wSv.png 250 %}
+{%img https://i.imgur.com/kZ69wSv.png 250 %}
 
 ## Sample project
 To see what this looks like when complete, check out this sample project: [The Mandolin on GitHub](https://github.com/arielelkin/Mandolin)
