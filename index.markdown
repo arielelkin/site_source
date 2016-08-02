@@ -7,8 +7,6 @@ footer: false
 
 I'm an iOS developer, this is my website.
 
-I work for [Project A Ventures](https://www.project-a.com/) in Berlin. 
-
 Here's the [list of apps I worked on](/apps). I love making all kinds of apps and have worked on over ten apps in four different App Store categories. 
 
 This website also hosts the [articles](/articles) I write about iOS Development (and, recently, Docker), as well as details of [open-source libraries I work on](/libraries) and [talks](/talks) I give. 
