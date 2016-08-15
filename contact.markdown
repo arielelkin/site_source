@@ -14,7 +14,7 @@ You can also find me on:
 
  * GitHub: [arielelkin](https://github.com/arielelkin)
  * Twitter: [@AriVocals](https://twitter.com/AriVocals)
- * LinkedIn: [LinkedIn profile](https://www.linkedin.com/profile/view?id=10801329)
+ * LinkedIn: [LinkedIn profile](https://www.linkedin.com/in/arielelkin)
 
 ## Work enquiries
 I am not currently available for hire for iOS application development.
