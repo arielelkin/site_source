@@ -17,4 +17,4 @@ You can also find me on:
  * LinkedIn: [LinkedIn profile](https://www.linkedin.com/in/arielelkin)
 
 ## Work enquiries
-I am not currently available for hire for iOS application development.
+I am available for hire on a freelance basis.
