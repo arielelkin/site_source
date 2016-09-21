@@ -1007,13 +1007,11 @@ My thanks to Rami Chowdhury and Alkis Papadakis for their helpful feedback on ea
 
 # Changelog
 
-You can track this article's edits [here](https://github.com/arielelkin/site_source/commits/master/articles/why-im-not-a-react-native-developer.markdown).
+You can track this article's edits [here](https://github.com/arielelkin/arielelkin.github.io/commits/master/articles/why-im-not-a-react-native-developer.html).
 
 # Comments
 
-Please join the discussion on Hacker News.
-
-
+Feel free to join the [discussion of this article on Hacker News](https://news.ycombinator.com/item?id=12549590).
 
 
 # References
