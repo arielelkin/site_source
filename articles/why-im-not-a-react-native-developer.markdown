@@ -1005,6 +1005,10 @@ And that is why I am not a React Native developer.
 
 My thanks to Rami Chowdhury and Alkis Papadakis for their helpful feedback on early version of this article. 
 
+# Changelog
+
+You can track this article's edits [here](https://github.com/arielelkin/site_source/commits/master/articles/why-im-not-a-react-native-developer.markdown).
+
 # Comments
 
 Please join the discussion on Hacker News.
