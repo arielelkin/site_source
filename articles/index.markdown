@@ -6,7 +6,7 @@ sharing: false
 footer: false
 ---
 
-* [Why I'm not a React Native Developer](articles/why-im-not-a-react-native-developer): An in-depth comparison of React Native with Swift development. 
+* [Why I'm not a React Native Developer](/articles/why-im-not-a-react-native-developer): An in-depth comparison of React Native with Swift development. 
 
 * [Padding and Spacing UIViews](https://insights.project-a.com/padding-and-spacing-uiviews-9ef25eb416c1): Techniques to create views that need to show padding, but which need the padding to disappear when their content is nil.
 
