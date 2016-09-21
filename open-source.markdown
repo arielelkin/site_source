@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Libraries I work on"
+title: "Open-source projects I work on"
 comments: false
 sharing: false
 footer: false

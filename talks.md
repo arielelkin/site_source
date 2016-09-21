@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Talks
+title: Talks and Workshops
 comments: false
 ---
 
-## Talks and Workshops
-
+* "Why I'm not a React Native Developer" at [Cocoaheads Berlin](https://www.meetup.com/Cocoaheads-Berlin/events/233851604/). [Article](articles/why-im-not-a-react-native-developer) and [slides]().
 * "The Worst Myths of Software Engineering Ethics" at [Project A Ventures](http://www.project-a.com/). 
 * "An Introduction To Blockchain Technology and Its Applications" at [Project A Ventures](http://www.project-a.com/).
 * "Using Swift enums with `UICollectionView` and `UITableView`" at [swift.berlin](http://www.meetup.com/swift-berlin/events/226908584/).
