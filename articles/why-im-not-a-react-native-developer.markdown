@@ -1014,8 +1014,6 @@ You can track this article's edits [here](https://github.com/arielelkin/arielelk
 Please join the [discussion of this article on Hacker News](https://news.ycombinator.com/item?id=12549590).
 
 
-
-
 # References
 
 * [We are the Team working on React Native AMA](https://www.reddit.com/r/IAmA/comments/3wyb3m/we_are_the_team_working_on_react_native_ask_us/cxzvfir)
