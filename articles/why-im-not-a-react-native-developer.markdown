@@ -920,7 +920,7 @@ Dozens of sandcastle competitions across the world show you the beautiful struct
 
 The King of Swamp Castle is the king of many Hackers. 
 
-![nice sandcastle](http://i.imgur.com/hTEOskq.jpg)
+![nice sandcastle](https://i.imgur.com/hTEOskq.jpg)
 
 Similarly, popularity is an unreliable criterion for evaluating programming languages. For a pretty basic reason: popularity may very well be the result of vendor lock-in (like being the only programming language that can be run in a browser), bandwagon effects, or legacy codebases. 
 
@@ -938,7 +938,7 @@ In fact, many things lead to negative productivity gains. For example:
 
 React Native has a total of 648 dependencies. 
 
-![648 total dependencies](http://i.imgur.com/g8B9S7a.png)
+![648 total dependencies](https://i.imgur.com/g8B9S7a.png)
 
 Not particularly surprising, as dependency chains can be long in the world of `npm`, React Native's package manager. 
 
@@ -987,15 +987,15 @@ Even though our industry (_still_) has no established open standard to measure t
 
 React Native's strengths in terms of portability and productivity are outweighed by its shortfalls in safety, the uncertainty about its long-term roadmap, and a daunting patent license:
 
-![React Native Radar Chart](http://i.imgur.com/TgMsSwu.png)
+![React Native Radar Chart](https://i.imgur.com/TgMsSwu.png)
 
 Mature platforms such as Xamarin and Appcelerator offer the best portability (with support for Windows phone), their mature development tools and choice of programming language will also offer gains in productivity and safety, and the fact that they are the core product of well-funded companies offer good assurances of longevity:
 
-![Xamarin/Appcelerator Radar Chart](http://i.imgur.com/ag2OzXC.png)
+![Xamarin/Appcelerator Radar Chart](https://i.imgur.com/ag2OzXC.png)
 
 Swift development is a winner in terms of safety, longevity, and productivity. Its portability is relatively low but not negligible: it does not allow you to build an Android version of your app, but it allows you to build a macOS version, and lets you write the app's server backend:
 
-![Swift Radar Chart](http://i.imgur.com/syAGZym.png)
+![Swift Radar Chart](https://i.imgur.com/syAGZym.png)
 
 And that is why I am not a React Native developer.
 
