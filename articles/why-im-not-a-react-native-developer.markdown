@@ -1011,7 +1011,7 @@ You can track this article's edits [here](https://github.com/arielelkin/arielelk
 
 # Comments
 
-Feel free to join the [discussion of this article on Hacker News](https://news.ycombinator.com/item?id=12549590).
+Please join the [discussion of this article on Hacker News](https://news.ycombinator.com/item?id=12549590).
 
 
 # References
