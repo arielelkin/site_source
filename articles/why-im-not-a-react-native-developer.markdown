@@ -1003,7 +1003,7 @@ And that is why I am not a React Native developer.
 
 # Acknowledgements
 
-My thanks to Rami Chowdhury and Alkis Papadakis for their helpful feedback on early version of this article. 
+My thanks to Rami Chowdhury and Alkis Papadakis for their helpful feedback on early version of this article. Thanks also to Greg McMullen for helping me decipher esoteric IP texts. 
 
 # Changelog
 
