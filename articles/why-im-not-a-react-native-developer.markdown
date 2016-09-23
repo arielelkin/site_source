@@ -1011,7 +1011,7 @@ You can track this article's edits [here](https://github.com/arielelkin/arielelk
 
 # Comments
 
-Please join the [discussion of this article on Hacker News](https://news.ycombinator.com/item?id=12549590).
+Follow and participate to the discussion of this article on [Hacker News](https://news.ycombinator.com/item?id=12549590) and [/r/programming](https://www.reddit.com/r/programming/comments/53yxk5/why_im_not_a_react_native_developer/).
 
 
 # References
