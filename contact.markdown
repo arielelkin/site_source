@@ -14,6 +14,7 @@ You can also find me on:
 
  * GitHub: [arielelkin](https://github.com/arielelkin)
  * Twitter: [@AriVocals](https://twitter.com/AriVocals)
+ * Stack Overflow: [Eric](https://stackoverflow.com/users/1072846/eric?tab=profile)
  * LinkedIn: [LinkedIn profile](https://www.linkedin.com/in/arielelkin)
 
 ## Work enquiries
