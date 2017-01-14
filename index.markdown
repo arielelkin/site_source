@@ -5,7 +5,7 @@ sharing: false
 footer: false
 ---
 
-I'm an iOS developer, this is my website.
+This is my website. I'm an iOS developer and I edit the [Mobile section of SitePoint](https://www.sitepoint.com/mobile/).
 
 Here's the [list of apps I worked on](/apps). I love making all kinds of apps and have worked on over ten apps in four different App Store categories. 
 
