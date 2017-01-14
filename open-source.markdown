@@ -6,6 +6,15 @@ sharing: false
 footer: false
 ---
 
+## PocketSVG
+
+[https://github.com/pocketsvg/PocketSVG](https://github.com/pocketsvg/PocketSVG)
+
+Easily convert your SVG files into  `CGPaths`, `CAShapeLayers`, `UIBezierPaths`, or `NSBezierCurves`.
+
+This makes it easy to create vector-based paths and shapes in your iOS or macOS.
+
+
 ## The Amazing Audio Engine
 
 [http://theamazingaudioengine.com/](http://theamazingaudioengine.com/)
@@ -13,6 +22,8 @@ footer: false
 The Amazing Audio Engine is a sophisticated framework for iOS audio applications, allowing, among other things, real-time audio recording, processing, and mixing. 
 
 I helped build an audio sequencer module for The Amazing Audio Engine. 
+
+**Note**: This library has now been retired. 
 
 
 ## The Synthesis Toolkit in C++
@@ -25,10 +36,3 @@ The STK was designed to facilitate rapid development of music synthesis and audi
 
 I helped improve the STK's support for iOS. 
 
-## PocketSVG
-
-[https://github.com/arielelkin/PocketSVG](https://github.com/arielelkin/PocketSVG)
-
-An Objective-C class that converts Scalable Vector Graphics (SVG) into: `CGPaths`, `CAShapeLayers`, `UIBezierPaths`, or `NSBezierCurves`.
-
-This makes it easy to create vector-based paths and shapes in your iOS or OS X apps.
