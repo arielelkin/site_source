@@ -1013,7 +1013,7 @@ You can track this article's edits [here](https://github.com/arielelkin/arielelk
 
 Follow and participate to the discussion of this article on [Hacker News](https://news.ycombinator.com/item?id=12549590), [Hacker News (again)](https://news.ycombinator.com/item?id=12592762) and [/r/programming](https://www.reddit.com/r/programming/comments/53yxk5/why_im_not_a_react_native_developer/).
 
-You can read a Korean translation of this article here: http://canapio.tistory.com/73 (courtesy of [canapio](https://twitter.com/canapio/status/812803213460049921).
+You can read a Korean translation of this article here: http://canapio.tistory.com/73 (courtesy of [canapio](https://twitter.com/canapio/status/812803213460049921)).
 
 # References
 
