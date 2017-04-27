@@ -16,7 +16,8 @@ github_username:  arielelkin
 disqus: arielelkin
 
 exclude:
-  - workspace.xcworkspace
+  - site-source.sublime-project
+  - site-source.sublime-workspace
 
 # Build settings
 markdown: kramdown
