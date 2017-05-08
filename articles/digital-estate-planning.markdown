@@ -6,6 +6,26 @@ comments: false
 sharing: false
 footer: false
 ---
+<!-- MarkdownTOC -->
+
+- [Motivation](#motivation)
+- [Components](#components)
+	- [Assets](#assets)
+	- [Persistence Types](#persistence-types)
+	- [Executors](#executors)
+	- [Digital Testament](#digital-testament)
+- [Requirements Of Privacy-preserving Digital Estate Planning Strategies And Protocols](#requirements-of-privacy-preserving-digital-estate-planning-strategies-and-protocols)
+	- [Comprehensiveness](#comprehensiveness)
+	- [Privacy-Preservation](#privacy-preservation)
+	- [Convenience](#convenience)
+- [Protocols](#protocols)
+	- [Centralised Fiduciaries](#centralised-fiduciaries)
+	- [Secret Sharing Schemes](#secret-sharing-schemes)
+- [Changelog](#changelog)
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+
+<!-- /MarkdownTOC -->
 
 
 # Motivation
@@ -22,7 +42,9 @@ The aim of the present article is to suggest a formal framework for thinking abo
 
 We will discuss acceptable criteria for reliable, user-friendly, and privacy-enhancing digital estate planning protocols and tools, and argue that these criteria can be satisfied by threshold cryptosystems.
 
-# Assets
+# Components
+
+## Assets
 
 A person’s digital estate is the sum of the digital assets that he has private access to. It includes files stored remotely or locally on his devices, as well as the entitlements granted by the person’s account credentials, passwords, or keys.
 
@@ -33,7 +55,7 @@ the videos the person uploaded to YouTube, the capability to remove previously u
 
 Assets can take many other forms. They include the person’s private encryption keys (e.g. those used in PGP or SSH), the password for logging into the person’s computer, a mobile device PIN code, or web domain names.
 
-# Persistence Types
+## Persistence Types
 
 For every asset or group of assets in his digital estate, a person, i.e. the _testator_, must specify if and how the asset should outlast him.
 Assets may be assigned one of the following persistence types:
@@ -44,11 +66,11 @@ Assets may be assigned one of the following persistence types:
 
 (A testator's wishes with regards to a particular asset’s persistence may not necessarily fit with one of the above types, in which case he should simply specify the way he wishes the asset to persist; indeed the purpose of the proposed persistence types is to have the user clarify his intent with regards to the asset’s persistence.)
 
-# Executors
+## Executors
 
 For every asset or group of assets in his digital estate, a testator must designate one or more persons or organisations to whom ownership will be transferred for the purposes of assigning it the required persistence type, and, if applicable, managing it thereafter.
 
-# Digital Testament
+## Digital Testament
 
 A _digital testament_ is a text document that:
 
@@ -118,7 +140,7 @@ You can track this article's edits [here](https://github.com/arielelkin/site_sou
 
 # Acknowledgements
 
-My thanks to Alejandro A.F. Japkin (NINA Science co-founder), G. Moore, J.M. Lindemann., and Pablo Vasquez.
+My thanks to Alejandro A.F. Japkin (NINA Science co-founder), G. Moore, J.M. Lindemann, and Pablo Vasquez.
 
 # References
 
