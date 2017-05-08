@@ -118,30 +118,29 @@ You can track this article's edits [here](https://github.com/arielelkin/site_sou
 
 # Acknowledgements
 
-My thanks to Alejandro A.F. Japkin (NINA | Science co-founder), G. Moore, J.M. Lindemann., and Pablo Vasquez
+My thanks to Alejandro A.F. Japkin (NINA Science co-founder), G. Moore, J.M. Lindemann., and Pablo Vasquez.
 
 # References
 
-* Micklitz, S., Ortlieb M., and Staddon, J. 2013. “I hereby leave my email to…”: Data Usage Control and the Digital Estate. In _Security and Privacy Workshops (SPW)_, IEEE. DOI=http://dx.doi.org/10.1109/SPW.2013.28
+* Micklitz, S., Ortlieb M., and Staddon, J. 2013. “I hereby leave my email to…”: Data Usage Control and the Digital Estate. In _Security and Privacy Workshops (SPW)_, IEEE. <http://dx.doi.org/10.1109/SPW.2013.28>
 
-* Tsaasan, A. M., Kusumakaulika, N., and Brubaker, J. R. 2015. Design Considerations and Implications in Post-Mortem Data Management. In _iConference 2015 Proceedings_. http://hdl.handle.net/2142/73729
+* Tsaasan, A. M., Kusumakaulika, N., and Brubaker, J. R. 2015. Design Considerations and Implications in Post-Mortem Data Management. In _iConference 2015 Proceedings_. <http://hdl.handle.net/2142/73729>
 
-* Brubaker, J. R., Dombrowski, L. S., Gilbert, A. M., Kusumakaulika, N., & Hayes, G. R. 2014, April. Stewarding a legacy: responsibilities and relationships in the management of post-mortem data. In _Proceedings of the SIGCHI Conference on Human Factors_ in Computing Systems (pp. 4157-4166). ACM. DOI=http://dx.doi.org/10.1145/2556288.2557059
+* Brubaker, J. R., Dombrowski, L. S., Gilbert, A. M., Kusumakaulika, N., & Hayes, G. R. 2014, April. Stewarding a legacy: responsibilities and relationships in the management of post-mortem data. In _Proceedings of the SIGCHI Conference on Human Factors_ in Computing Systems (pp. 4157-4166). ACM. <http://dx.doi.org/10.1145/2556288.2557059>
 
-* Bahri, L., Carminati, B., & Ferrari, E. 2015, August. What happens to my online social estate when I am gone? An integrated approach to posthumous online data management. In _Information Reuse and Integration (IRI)_, 2015 IEEE International Conference on (pp. 31-38). IEEE. DOI=http://dx.doi.org/10.1109/IRI.2015.16
+* Bahri, L., Carminati, B., & Ferrari, E. 2015, August. What happens to my online social estate when I am gone? An integrated approach to posthumous online data management. In _Information Reuse and Integration (IRI)_, 2015 IEEE International Conference on (pp. 31-38). IEEE. <http://dx.doi.org/10.1109/IRI.2015.16>
 
 * Shamir, A. 1979. How to share a secret. _Communications of the ACM_, 22(11), 612-613. DOI=http://dx.doi.org/10.1145/359168.359176
-Pedersen, T. P. 1991, April. A threshold cryptosystem without a trusted party. In Advances in Cryptology—EUROCRYPT’91 (pp. 522-526). DOI=http://dx.doi.org/10.1007/3-540-46416-6_47
+Pedersen, T. P. 1991, April. A threshold cryptosystem without a trusted party. In Advances in Cryptology—EUROCRYPT’91 (pp. 522-526). <http://dx.doi.org/10.1007/3-540-46416-6_47>
 
-* Digital Estate Planning Online Services List. Retrieved April 2016. The Digital Beyond. http://www.thedigitalbeyond.com/online-services-list/
+* Digital Estate Planning Online Services List. Retrieved April 2016. The Digital Beyond. <http://www.thedigitalbeyond.com/online-services-list/>
 
-* Rijmenants, D. 2009. Secret Splitting: A Practical and Secure Way to Delegate Keys. http://users.telenet.be/d.rijmenants/papers/secret_splitting.pdf
+* Rijmenants, D. 2009. Secret Splitting: A Practical and Secure Way to Delegate Keys. <http://users.telenet.be/d.rijmenants/papers/secret_splitting.pdf>
 
-* Arnold, C. 2013. How to Manage Your Digital Afterlife. In Scientific American. http://www.scientificamerican.com/article/how-to-manage-your-digital-afterlife/
+* Arnold, C. 2013. How to Manage Your Digital Afterlife. In Scientific American. <http://www.scientificamerican.com/article/how-to-manage-your-digital-afterlife/>
 
-* Walter et al. 2011. Does The Internet Change How We Die And Mourn? An Overview. https://www.scribd.com/document/119759720/Does-the-Internet-change-the-way-we-die-and-mourn-An-Overview
+* Walter et al. 2011. Does The Internet Change How We Die And Mourn? An Overview. <https://www.scribd.com/document/119759720/Does-the-Internet-change-the-way-we-die-and-mourn-An-Overview>
 
-* Walker, R. 2011. Cyberspace When You’re Dead.
-http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html
+* Walker, R. 2011. Cyberspace When You’re Dead. <http://www.nytimes.com/2011/01/09/magazine/09Immortality-t.html>
 
-* Doctorow, C. 2009. When I'm dead, how will my loved ones break my password? http://www.theguardian.com/technology/2009/jun/30/data-protection-internet
+* Doctorow, C. 2009. When I'm dead, how will my loved ones break my password? <http://www.theguardian.com/technology/2009/jun/30/data-protection-internet>
