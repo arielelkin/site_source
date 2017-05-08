@@ -112,13 +112,16 @@ A serial combination of symmetric-key cryptography and secret sharing schemes ca
 
 Under this scheme, Alice may update her testament at will without having to notify her executors, and the **Convenience** criteria is fully satisfied. Alice must now trust a third-party for the broadcasting of her testament, but nowadays there exists many adequate decentralised file storage systems (such as IPFS, Storj, or Tahoe-LAFS).
 
+# Changelog
 
+You can track this article's edits [here](https://github.com/arielelkin/site_source/commits/master/articles/digital-estate-planning.markdown).
 
 # Acknowledgements
 
 My thanks to Alejandro A.F. Japkin (NINA | Science co-founder), G. Moore, J.M. Lindemann., and Pablo Vasquez
 
-## References
+# References
+
 * Micklitz, S., Ortlieb M., and Staddon, J. 2013. “I hereby leave my email to…”: Data Usage Control and the Digital Estate. In _Security and Privacy Workshops (SPW)_, IEEE. DOI=http://dx.doi.org/10.1109/SPW.2013.28
 
 * Tsaasan, A. M., Kusumakaulika, N., and Brubaker, J. R. 2015. Design Considerations and Implications in Post-Mortem Data Management. In _iConference 2015 Proceedings_. http://hdl.handle.net/2142/73729
