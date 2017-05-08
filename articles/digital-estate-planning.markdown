@@ -21,6 +21,7 @@ footer: false
 - [Protocols](#protocols)
 	- [Centralised Fiduciaries](#centralised-fiduciaries)
 	- [Secret Sharing Schemes](#secret-sharing-schemes)
+- [Comments](#comments)
 - [Changelog](#changelog)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
@@ -133,6 +134,10 @@ A serial combination of symmetric-key cryptography and secret sharing schemes ca
 1. To each executor, Alice gives one of the shares of the encrypted key.
 
 Under this scheme, Alice may update her testament at will without having to notify her executors, and the **Convenience** criteria is fully satisfied. Alice must now trust a third-party for the broadcasting of her testament, but nowadays there exists many adequate decentralised file storage systems (such as IPFS, Storj, or Tahoe-LAFS).
+
+# Comments
+
+Follow and participate in the discussion of this article [on Hacker News](https://news.ycombinator.com/item?id=14292243) and on [/r/technology](https://www.reddit.com/r/technology/comments/69yq7n/how_will_you_pass_on_your_digital_assets_after/).
 
 # Changelog
 
