@@ -6,7 +6,9 @@ sharing: false
 footer: false
 ---
 
-* [Why I'm not a React Native Developer](/articles/why-im-not-a-react-native-developer): An in-depth comparison of React Native with Swift development. 
+* [Digital Estate Planning](/articles/digital-estate-planning): A framework and protocol for handling your digital assets after your death.
+
+* [Why I'm not a React Native Developer](/articles/why-im-not-a-react-native-developer): An in-depth comparison of React Native with Swift development.
 
 * [Padding and Spacing UIViews](https://insights.project-a.com/padding-and-spacing-uiviews-9ef25eb416c1): Techniques to create views that need to show padding, but which need the padding to disappear when their content is nil.
 
@@ -14,7 +16,7 @@ footer: false
 
 * [Multicast Delegate](/articles/objective-c-multicast-delegate): An easy and reliable way to implement one-to-many delegation in Objective-C.
 
-* [UILabel + UIScrollView + Auto Layout](/articles/uilabel-plus-uiscrollview-plus-autolayout): An easy way to use a label of variable height within a scrollview, with all the benefits of Auto Layout. 
+* [UILabel + UIScrollView + Auto Layout](/articles/uilabel-plus-uiscrollview-plus-autolayout): An easy way to use a label of variable height within a scrollview, with all the benefits of Auto Layout.
 
 ## Tutorials
 
