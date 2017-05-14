@@ -24,14 +24,12 @@ footer: false
 - [Comments](#comments)
 - [Changelog](#changelog)
 - [Acknowledgements](#acknowledgements)
-- [References](#references)
+- [References and Further Reading](#references-and-further-reading)
 
 <!-- /MarkdownTOC -->
 
 
 # Motivation
-
-Our wishes and rights push us to build tools that preserve our privacy during our life span, but these very tools may hinder our wishes and rights when we are no longer here to control them.
 
 Traditional technologies protect a user’s privacy by upholding the basic information security directive that the user, and only the user, have sole exclusive custody and knowledge of his keys. They also assume, both in theory and in practice, that the user is immortal and perennially healthy. The corollary of many of these policies is that a (deceased) user is buried with his keys.
 
@@ -39,7 +37,7 @@ This is an awkward situation for many people: those of us who are both privacy-c
 
 Indeed, a digital asset can be said to be part of one’s digital estate if one has private have access to it. But passing on one’s digital estate after one’s death is an issue that has received little attention from academic Computer Science, and little originality from the private sector. Prior research in the field of Computer Science has focused on best practices in passing digital assets priorly known to or under custody of a third-party, viz. one’s pre-existing social media account; but so far, no satisfactory overarching strategies have been proposed that can handle the entirety of a person’s digital assets.
 
-The aim of the present article is to suggest a formal framework for thinking about digital estate planning: A **digital estate** is a set of digital _assets_ with pre-assigned _persistence types_. Its **planning** refers to the users and a predesignated group of _executors_ following a predefined _protocol_ for the processing the assets after the user's death.
+The aim of the present article is to suggest a formal framework for thinking about digital estate planning: A **digital estate** is a set of digital _assets_ with pre-assigned _persistence types_. Its **planning** refers to a testator and a predesignated group of _executors_ following a predefined _protocol_ for the processing the assets after the testator's death.
 
 We will discuss acceptable criteria for reliable, user-friendly, and privacy-enhancing digital estate planning protocols and tools, and argue that these criteria can be satisfied by threshold cryptosystems.
 
@@ -60,6 +58,7 @@ Assets can take many other forms. They include the person’s private encryption
 
 For every asset or group of assets in his digital estate, a person, i.e. the _testator_, must specify if and how the asset should outlast him.
 Assets may be assigned one of the following persistence types:
+
 1. _No Persistence_: the asset must be permanently destroyed as soon as possible after the person’s death.
 2. _Private Immutable Persistence_: the asset must be preserved in the state it was left by the person, its access must be restricted to a predesignated group of people.
 3. _Public Immutable Persistence_: the asset should be made available to the public and must be preserved in the state it was left by the person.
@@ -147,7 +146,7 @@ You can track this article's edits [here](https://github.com/arielelkin/site_sou
 
 My thanks to Alejandro A.F. Japkin (NINA Science co-founder), G. Moore, J.M. Lindemann, and Pablo Vasquez.
 
-# References
+# References and Further Reading
 
 * Micklitz, S., Ortlieb M., and Staddon, J. 2013. “I hereby leave my email to…”: Data Usage Control and the Digital Estate. In _Security and Privacy Workshops (SPW)_, IEEE. <http://dx.doi.org/10.1109/SPW.2013.28>
 
