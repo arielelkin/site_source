@@ -136,7 +136,11 @@ Under this scheme, Alice may update her testament at will without having to noti
 
 # Comments
 
-Follow and participate in the discussion of this article [on Hacker News](https://news.ycombinator.com/item?id=14292243) and on [/r/technology](https://www.reddit.com/r/technology/comments/69yq7n/how_will_you_pass_on_your_digital_assets_after/).
+Follow and participate in the discussion of this article on
+
+* [Hacker News](https://news.ycombinator.com/item?id=14292243)
+* [/r/technology](https://www.reddit.com/r/technology/comments/69yq7n/how_will_you_pass_on_your_digital_assets_after/)
+* [SlowTech Berlin Mailing List](https://slowtechberlin.de/mailman/private/slowtechberlin/2017-May/thread.html)
 
 # Changelog
 
