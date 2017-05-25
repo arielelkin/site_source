@@ -6,6 +6,15 @@ sharing: false
 footer: false
 ---
 
+## Wine in Black
+
+iPhone and iPad app of fine wine store serving Germany, Austria, Switzerland, and France. Offers smooth catalog browsing, dynamic campaigns advertising, push notifications of flash sales, and smart checkout process.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/jP1UW" data-context="false"><a href="//imgur.com/jP1UW">WiB Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+* [App Store Link](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
+* [App's website](https://www.wine-in-black.de/)
+
 ## Evino
 
 Brazil's first and most highly-rated wine e-commerce app. Offers smooth catalog browsing, dynamic campaigns advertising, push notifications of flash sales, and easy checkout process.
