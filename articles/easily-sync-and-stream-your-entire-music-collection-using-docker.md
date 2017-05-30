@@ -7,11 +7,11 @@ sharing: true
 footer: true
 ---
 
-You like owning your music, but you own so many gigabytes of it that it's hard, if not impossible, to carry around. 
+You like owning your music, but you own so many gigabytes of it that it's hard, if not impossible, to carry around.
 
-Luckily, you own a server too. 
+Luckily, you own a server too.
 
-> _What? So you're saying I should upload my eight terabytes of music up on my server? But dude, I add five gigabytes of music every day. And on a bad day I delete six gigabytes of music. And on a very bad day, I will obsessively edit the cover art, genre, and year recorded of 600 megabytes' worth of files, and the server is too stupid to know the difference._ 
+> _What? So you're saying I should upload my eight terabytes of music up on my server? But dude, I add five gigabytes of music every day. And on a bad day I delete six gigabytes of music. And on a very bad day, I will obsessively edit the cover art, genre, and year recorded of 600 megabytes' worth of files, and the server is too stupid to know the difference._
 
 Your life evolves, and your music collection evolves with you. But before you give up and start renting your music from Spotify, consider elevating your obsession for music collection by building your own music synchronisation and streaming service.
 
@@ -25,7 +25,7 @@ Your life evolves, and your music collection evolves with you. But before you gi
 
 We will create a directory _on the server_ for storing the music.
 
-We will use ownCloud, an open-source file hosting app to handle the uploading and synchronization of our music collection from our personal computer to our server. We'll run the ownCloud instance inside a Docker container and mount the aforementioned music directory onto it. 
+We will use ownCloud, an open-source file hosting app to handle the uploading and synchronization of our music collection from our personal computer to our server. We'll run the ownCloud instance inside a Docker container and mount the aforementioned music directory onto it.
 
 We will use Ampache, an open-source music database browser and streamer as a user-facing front-end to our music database, and for streaming the music. We'll also run the Ampache instance inside a Docker container and mount the music directory into it.
 
@@ -57,7 +57,7 @@ $ pwd
 /home/your_username/owncloud_music
 ```
 
-The directory doesn't need to be in your home folder, but it should be somewhere where you're not likely to move it around. For the rest of this tutorial, we'll assume that `/home/your_username/owncloud_music` is the absolute path of your music directory. 
+The directory doesn't need to be in your home folder, but it should be somewhere where you're not likely to move it around. For the rest of this tutorial, we'll assume that `/home/your_username/owncloud_music` is the absolute path of your music directory.
 
 Install an ownCloud instance on your server, mount the above directory onto it as a data volume:
 
@@ -65,17 +65,17 @@ Install an ownCloud instance on your server, mount the above directory onto it a
 $ docker run --name audiosync -v /home/your_username/owncloud_music:/var/www/html -p 1996:80 -d owncloud:9
 ```
 
-Let's break down the above command. 
+Let's break down the above command.
 
 `docker run` tells docker to pull the ownCloud image and its dependencies, build it, and start the container from that image with a particular set of options that I'll get into more detail below:
 
-`--name audiosync` allows us to name our container in order to be able to refer to it more easily. We could have several ownCloud instances running, but this one's dedicated to synchronizing our audio, so let's call it `audiosync`. 
+`--name audiosync` allows us to name our container in order to be able to refer to it more easily. We could have several ownCloud instances running, but this one's dedicated to synchronizing our audio, so let's call it `audiosync`.
 
-`-v /home/your_username/owncloud_music:/var/www/html` is the money shot. This mounts the music directory we created before into the ownCloud container at `/var/www/html`, which is the directory _within the ownCloud container_ where ownCloud stores its data and local configuration. ownCloud is under the impression of running in its own lonely operating system, yet little does it know, it's writing directly onto our server filesystem. Make sure you pass in the absolute path to the music directory. 
+`-v /home/your_username/owncloud_music:/var/www/html` is the money shot. This mounts the music directory we created before into the ownCloud container at `/var/www/html`, which is the directory _within the ownCloud container_ where ownCloud stores its data and local configuration. ownCloud is under the impression of running in its own lonely operating system, yet little does it know, it's writing directly onto our server filesystem. Make sure you pass in the absolute path to the music directory.
 
-`-p 1996:80` ownCloud listens to incoming web traffic on port 80. But so does Ampache, and so might other things running on your server. (Port 80 is the default port that your server listens to, it's what you see when you access `http://yourdomain.com/`). So our server will listen to traffic on port 1996 and route it to ownCloud's port 80. I recommend using port 1996 because that's the year that the album _Below the Bassline_ by Ernest Ranglin was released. 
+`-p 1996:80` ownCloud listens to incoming web traffic on port 80. But so does Ampache, and so might other things running on your server. (Port 80 is the default port that your server listens to, it's what you see when you access `http://yourdomain.com/`). So our server will listen to traffic on port 1996 and route it to ownCloud's port 80. I recommend using port 1996 because that's the year that the album _Below the Bassline_ by Ernest Ranglin was released.
 
-`-d` starts the container in detached mode. This runs the container in the background rather than in the foreground. 
+`-d` starts the container in detached mode. This runs the container in the background rather than in the foreground.
 
 `owncloud:9` is the particular version of ownCloud we want. This pulls the official ownCloud image from Docker Hub.
 
@@ -109,7 +109,7 @@ If you get the "You are accessing the server from an untrusted domain." error:
 So change this part of the file:
 
 ```
-'trusted_domains' => 
+'trusted_domains' =>
   array (
     0 => 'yourdomain.com:1996',
   ),
@@ -118,7 +118,7 @@ So change this part of the file:
 to this:
 
 ```
-'trusted_domains' => 
+'trusted_domains' =>
   array (
     0 => 'yourdomain.com',
   ),
@@ -138,7 +138,7 @@ Now tell the ownCloud client where your music folder is, make sure you select "K
 ownCloud should have now started uploading your music to your server:
 ![](https://i.imgur.com/NIte8sz.png)
 
-The `Documents` and `Photos` folders are created by default by ownCloud, you can delete them. 
+The `Documents` and `Photos` folders are created by default by ownCloud, you can delete them.
 
 Onto the streamer. But before we can build and start it, we need to find out exactly where our music is inside `my_music`.
 
@@ -154,21 +154,21 @@ $ docker run --name=ampache -v /owncloud_music/data/your_owncloud_username/files
 
 And let's break that down:
 
-`docker run --name=ampache` Here we're pulling, building, and running a container with the Ampache, and we're naming it `ampache`. 
+`docker run --name=ampache` Here we're pulling, building, and running a container with the Ampache, and we're naming it `ampache`.
 
-`-v /owncloud_music/data/your_owncloud_username/files:/media:ro` This mounts the server's music directory we created before into the ampache container where ampache looks for music files. We add `:ro` option to specify that the mount should be read-only. Remember that the path to the music folder **must** be absolute. In this example, we assume that `owncloud_music` is at in the root directory `/`, but you should make sure that the path you place after the `-v`is the path you get when you run `pwd` in the `owncloud_music` directory. 
+`-v /owncloud_music/data/your_owncloud_username/files:/media:ro` This mounts the server's music directory we created before into the ampache container where ampache looks for music files. We add `:ro` option to specify that the mount should be read-only. Remember that the path to the music folder **must** be absolute. In this example, we assume that `owncloud_music` is at in the root directory `/`, but you should make sure that the path you place after the `-v`is the path you get when you run `pwd` in the `owncloud_music` directory.
 
-`-p 2008:80` as above, this routes traffic coming and going to our server's port 2008, into Ampache's port 80. Again, I recommend port 2008 for technical reasons as it's the year that Will Bernard's _Blue Plate Special_ was released, with Stanton Moore on drums, you should listen to it. 
+`-p 2008:80` as above, this routes traffic coming and going to our server's port 2008, into Ampache's port 80. Again, I recommend port 2008 for technical reasons as it's the year that Will Bernard's _Blue Plate Special_ was released, with Stanton Moore on drums, you should listen to it.
 
-`ampache/ampache` tells Docker to pull and build the official Ampache image. 
+`ampache/ampache` tells Docker to pull and build the official Ampache image.
 
 Once Ampache has been pulled and built, open your web browser and visit `yourdomain.com:2008`
 
 You'll be greeted with Ampache's installation wizard:
 
-![](https://i.imgur.com/dGEfcZz.png) 
+![](https://i.imgur.com/dGEfcZz.png)
 
-Click "Start Configuration". 
+Click "Start Configuration".
 
 The next page tells you about if your environment has satisfies Ampache's technical prerequisites. Click "Continue".
 
@@ -179,12 +179,14 @@ The next page creates the Ampache database. All you have to do here is:
 
 Leave the other default values, and click "Insert Database".
 
-In this next page, make sure that 
-MySQL Username and MySQL Password match the ones in the previous step (default username is "ampache", the password should be the one you inputted just before). 
+In this next page, make sure that
+MySQL Username and MySQL Password match the ones in the previous step (default username is "ampache", the password should be the one you inputted just before).
 
-Now click on the File Insight menu, and click on the "Write" button
+Now click on the File Insight menu, and click on the "Write" button insert the password in the MySQL Password field if it's not already inserted.
 
- insert the password in the MySQL Password field. You can leave the other default options. Finally, click "Create config" 
+In the Transcoding section, make sure you select `avconv` as Template Configuration.
+
+Finally, click "Create config"
 
 In the next page, create your Ampache (admin) user account. Pick a username and a password, click "Create Account". Now you can login into Ampache!
 
@@ -194,7 +196,7 @@ Ampache now needs you to add a Catalog for it to start building your music colle
 
 ![](https://i.imgur.com/TRIZYrb.png)
 
-Now select "Add a Catalog" from the menu below. 
+Now select "Add a Catalog" from the menu below.
 
 Select "local" as the Catalog Type, and fill in `/media/` as the path to the music. You can then "Add Catalog". Wait for the Catalog to finish building, and your music is ready for streaming! Click on the headphones icon on the top right of the left column, and you can Browse Music. If ownCloud has already uploaded music to your server, they will be there:
 
@@ -212,7 +214,7 @@ $ docker run --name audiosync -v /home/your_username/owncloud_music_files:/var/w
 
 ## Troubleshooting
 
-If you think you missed a step and your ownCloud or Ampache container doesn't look like it's been properly configured, the fastest way to fix it is to kill and delete the container, and build it again from scratch. One or both of these commands will do that: 
+If you think you missed a step and your ownCloud or Ampache container doesn't look like it's been properly configured, the fastest way to fix it is to kill and delete the container, and build it again from scratch. One or both of these commands will do that:
 
 ```
 $ docker rm -f ampache
@@ -227,11 +229,11 @@ $ cat /var/www/config/ampache.cfg.php
 ```
 
 ## Lossless files aren't streaming
-Lossless files aren't made for streaming, and need to be transcoded down to a lower bitrate for them to be streamed. By default, Ampache will silently fail to stream a lossless file, and you need to manually tell it to enable transcoding. 
+Lossless files aren't made for streaming, and need to be transcoded down to a lower bitrate for them to be streamed. By default, Ampache will silently fail to stream a lossless file, and you need to manually tell it to enable transcoding.
 
-Find the `transcode_m4a` key in the file. It's the first key in the section of transcoding configurations. 
+Find the `transcode_m4a` key in the file. It's the first key in the section of transcoding configurations.
 
-Enabling transcoding consists in uncommenting the relevant lines, by removing the `;` from the beginning of the lines. First, find the formats you want to transcode and remove the the `;` from the line they're on. 
+Enabling transcoding consists in uncommenting the relevant lines, by removing the `;` from the beginning of the lines. First, find the formats you want to transcode and remove the the `;` from the line they're on.
 
 Then, remove the `;` from the beginning of the following lines:
 
@@ -240,7 +242,7 @@ Then, remove the `;` from the beginning of the following lines:
 ;transcode_cmd = "avconv"
 ```
 
-Lossless files should now stream, but at the default very low bitrate (32kbps). So in Ampache's Web Interface, go to Settings --> Streaming, and set the "Transcode Bitrate" to something acceptable like `256`. 
+Lossless files should now stream, but at the default very low bitrate (32kbps). So in Ampache's Web Interface, go to Settings --> Streaming, and set the "Transcode Bitrate" to something acceptable like `256`.
 
 
 ## Feedback
@@ -256,9 +258,9 @@ Lossless files should now stream, but at the default very low bitrate (32kbps). 
 * [ownCloud Documentation](https://doc.owncloud.org/)
 * [Docker Documentation: Volumes](https://docs.docker.com/engine/userguide/containers/dockervolumes/)
 
-## Acknowledgements 
+## Acknowledgements
 
-Thanks to [Jérôme Petazzoni](https://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft. 
+Thanks to [Jérôme Petazzoni](https://jpetazzo.github.io/) and [Benjamin Nothdurft](https://twitter.com/dataduke) for helping me understand Docker and helping me get the above Docker + Ampache + ownCloud equation to work! I'm also grateful to [Sam Tuke](https://twitter.com/samtuke) for reviewing the draft.
 
 And thank you [@Docker](https://www.twitter.com/docker) for the shout out:
 
