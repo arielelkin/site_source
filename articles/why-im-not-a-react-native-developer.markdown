@@ -576,7 +576,7 @@ console.log(foo()) //undefined
 
 #### Switch fallthrough
 
-If you forget to include a `break` statement in a clause of a `switch` statement, you fall through. Also, a `swift` statement doesn't carry out checks for case exhaustivity.
+If you forget to include a `break` statement in a clause of a `switch` statement, you fall through. Also, a `switch` statement doesn't carry out checks for case exhaustivity.
 
 ```javascript
 var j = 32
