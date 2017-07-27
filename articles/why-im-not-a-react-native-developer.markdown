@@ -38,7 +38,7 @@ Facebook wants you to switch:
 
 ![Is Facebook's intention with React Native to wholly replace native mobile development as we know it today? Yes](https://i.imgur.com/GWXQehS.png)
 
-And the React Native Team's sustained and painstaking efforts match the ambition. The've produced a software development platform so substantial that it can legitimately be considered a replacement for our traditional Xcode/Swift/ObjC stack.
+And the React Native Team's sustained and painstaking efforts match the ambition. They've produced a software development platform so substantial that it can legitimately be considered a replacement for our traditional Xcode/Swift/ObjC stack.
 
 Would it be a viable replacement? The blog posts I've read about React Native provide a rather cursory assessment of it. None has assessed its advantages _and_ disadvantages with the depth you'd expect from someone trying to persuade you to change your software development platform.
 
