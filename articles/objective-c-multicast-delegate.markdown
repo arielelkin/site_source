@@ -47,53 +47,53 @@ Here's a simple and reliable way to implement one-to-many delegation in Objectiv
 }
 ```
 
-Here are the main benefits of this implementation: 
+Here are the main benefits of this implementation:
 
- * Any number of objects that add themselves as delegates of a `Delegator` object can expect `eventHappened` to be called. 
- * If a delegate object is deallocated, you don't need to worry about anything. The `delegates` hash table stores a weak reference to it, so the delegator won't call it in `somethingHappened`. This also means that there are no strong reference cycles incurred. 
+ * Any number of objects that add themselves as delegates of a `Delegator` object can expect `eventHappened` to be called.
+ * If a delegate object is deallocated, you don't need to worry about anything. The `delegates` hash table stores a weak reference to it, so the delegator won't call it in `somethingHappened`. This also means that there are no strong reference cycles incurred.
  * You get compile-time checks for protocol conformance.
- * It doesn't matter if you accidentally add the same object as a delegate several times, it will only appear once inside `delegates`. 
+ * It doesn't matter if you accidentally add the same object as a delegate several times, it will only appear once inside `delegates`.
  * You can add and remove delegate objects dynamically.
  * No extraneous abstractions required, i.e. you avoid using KVO and `NSNotificationCenter`.
- 
+
 ### When would I want to use this?
 
-Whenever you need an object to talk to several other objects, and you want to use the delegate pattern. 
- 
+Whenever you need an object to talk to several other objects, and you want to use the delegate pattern.
+
 ### Delegate methods with return values
 
-Consider this method in `UITableViewDelegate`: 
- 
+Consider this method in `UITableViewDelegate`:
+
 ```objective-c
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 ```
 
-The tableview object calls this method when it needs to know what height its rows should have. If it has more than one delegate returning row heights, the delegates could potentially return contradicting values and leave the tableview in an inconsistent state. 
+The tableview object calls this method when it needs to know what height its rows should have. If it has more than one delegate returning row heights, the delegates could potentially return contradicting values and leave the tableview in an inconsistent state.
 
 Therefore, don't use one-to-many delegation for delegate methods whose return value could leave a delegator object in an inconsistent state. Use traditional one-to-one delegation instead: declare a new formal protocol specifically for a one-to-one delegative relationship, and declare an adequately named `delegate` property.
 
-You *can* combine one-to-many and one-to-one delegate methods in the same protocol, but it's not good practice as the contract is not clear. The compiler will think that any class that conforms to the protocol should implement all its non-optional methods. 
+You *can* combine one-to-many and one-to-one delegate methods in the same protocol, but it's not good practice as the contract is not clear. The compiler will think that any class that conforms to the protocol should implement all its non-optional methods.
 
 ### Discussion
- 
+
 Traditionally, delegators have only one delegate in Objectice-C. If they need to talk to more than one object, then we're told to either:
 
  * Set the delegate to a manager object which will be responsible for updating other objects.
  * Use The Observer Pattern (via Key-Value Observing), or the Publish-Subscribe pattern (via `NSNotificationCenter`)
- 
-The first option can be a good choice, but can turn manager objects into complex control centers. It may also add an unecessary layer of abstraction if the manager is created just for the purpose of handling those delegate messages. So this option is often chosen at the expense of simplicity and modularity. 
 
-The second option is chosen at the expense of delegation, i.e. having an object talk in your terms to another object. 
+The first option can be a good choice, but can turn manager objects into complex control centers. It may also add an unecessary layer of abstraction if the manager is created just for the purpose of handling those delegate messages. So this option is often chosen at the expense of simplicity and modularity.
+
+The second option is chosen at the expense of delegation, i.e. having an object talk in your terms to another object.
 
 Theres's two problems with these two alternatives:
 
 #### Problem 1: They bring in a set of problems that are not worth solving if all you need is a one-to-many delegative relationship
 
- * You're adding unnecessary complexity by having to deal with new abstractions *you* never needed: `NSKeyValueObservingOptions`, key paths, notification names, `NSNotification`,etc. 
+ * You're adding unnecessary complexity by having to deal with new abstractions *you* never needed: `NSKeyValueObservingOptions`, key paths, notification names, `NSNotification`,etc.
   * There's no type-checking. I can shove whatever object I want as the `value` in `setValue:forKeyPath:`, and I can shove anything I want in an `NSNotification`'s `userInfo` dictionary. Which means that *you* need to ensure that your listeners are doing all the type-checking they can.
   * If you register yourself multiple times for the exact specific notification, NSNotificationCenter will NOT recognize the redundancy and instead will fire off as many notifications as you've registered an observation for.
-  * Neither KVO nor `NSNotificationCenter` provide a way for you to know who the listeners are. 
- * They don't clean up after themselves. *You* are responsible for ensuring that listeners are alive when either KVO or `NSNotificationCenter` fires up a notification. Otherwise they... crash your app. 
+  * Neither KVO nor `NSNotificationCenter` provide a way for you to know who the listeners are.
+ * They don't clean up after themselves. *You* are responsible for ensuring that listeners are alive when either KVO or `NSNotificationCenter` fires up a notification. Otherwise they... crash your app.
  * The list goes on (for more in-depth analyses (of people smarter than me who agree with me), check out the relevant articles in the References section below)
 
 
@@ -133,7 +133,7 @@ scrollView.delegate = multicastDelegate;
 
 These libraries are useful if you need to give multicasting capabilities to a Cocoa or Cocoa Touch class. But note that they don't support compile-time checks for protocol conformance.
 
-I liked the idea of the `addDelegate` and `removeDelegate:` methods, but wanted an implementation that wasn't as complex, and which did not require a separate class. 
+I liked the idea of the `addDelegate` and `removeDelegate:` methods, but wanted an implementation that wasn't as complex, and which did not require a separate class.
 
 ## Demo
 

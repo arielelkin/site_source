@@ -15,7 +15,7 @@ In this article I'll offer some `NSURLSession` techniques to accomplish common n
 * **File downloads**: Downloading a file from a remote URL and saving it to disk.
 * **Background downloads**: Downloading a (large) file from a remote URL and saving it to disk, in the background (i.e. even if your app is closed).
 
-Here's the code: 
+Here's the code:
 
 ```objective-c
 #import <Foundation/Foundation.h>
@@ -43,48 +43,48 @@ Here's the code:
 
 + (void)fetchContentsOfURL:(NSURL *)url
                 completion:(void (^)(NSData *data, NSError *error)) completionHandler {
-        
+
     NSURLSessionDataTask *dataTask =
     [[self dataSession] dataTaskWithURL:url
                       completionHandler:
-     
+
      ^(NSData *data, NSURLResponse *response, NSError *error) {
-         
+
          if (completionHandler == nil) return;
-         
+
          if (error) {
              completionHandler(nil, error);
              return;
          }
          completionHandler(data, nil);
      }];
-    
+
     [dataTask resume];
 }
 
 + (void)downloadFileAtURL:(NSURL *)url
                toLocation:(NSURL *)destinationURL
                completion:(void (^)(NSError *error)) completionHandler {
-    
+
     NSURLSessionDownloadTask *fileDownloadTask =
     [[self dataSession] downloadTaskWithRequest:[NSURLRequest requestWithURL:url]
                               completionHandler:
-     
+
      ^(NSURL *location, NSURLResponse *response, NSError *error) {
-         
+
          if (completionHandler == nil) return;
-         
+
          if (error) {
              completionHandler(error);
              return;
          }
-         
+
          NSError *fileError = nil;
          [[NSFileManager defaultManager] removeItemAtURL:destinationURL error:NULL];
          [[NSFileManager defaultManager] moveItemAtURL:location toURL:destinationURL error:&fileError];
          completionHandler(fileError);
      }];
-    
+
     [fileDownloadTask resume];
 }
 
@@ -96,7 +96,7 @@ Here's the code:
 
 You can see that our networking code is inside a `Networker` class, isolated from other code, we didn't shove it inside, say, a `UIViewController` subclass.
 
-You'll probably have more than one class in your app that needs data from the internet, but you don't want to replicate the same networking code in every single class that downloads or uploads data. What you should do is create a class that *wraps* `NSURLSession`, and whose responsibility is to be a networking hub that manages all your app's networking needs. This class will in turn be used by classes which require downloading or uploading, without them having to know or worry about `NSURLSession`. 
+You'll probably have more than one class in your app that needs data from the internet, but you don't want to replicate the same networking code in every single class that downloads or uploads data. What you should do is create a class that *wraps* `NSURLSession`, and whose responsibility is to be a networking hub that manages all your app's networking needs. This class will in turn be used by classes which require downloading or uploading, without them having to know or worry about `NSURLSession`.
 
 This is based on the assumption that all classes that use `Networker` are satisfied with an `NSURLSession` being configured in a single way. But if we have more complex requirements in which, for example, two different classes using two different remote APIs need to use two different timeout intervals for their requests, you'll be better off making making a `Networker` subclass for each use case, in which you adequately override `dataSession`.
 
@@ -122,7 +122,7 @@ This is based on the assumption that all classes that use `Networker` are satisf
 
 This is partly a matter of style. When you're writing code that uses `Networker`, it tends to be more readable if the sequence of actions is clear.
 
-This is also a matter of convenience, as the block will easily let you use variables available just in the scope of the method in which the networking was invoked. 
+This is also a matter of convenience, as the block will easily let you use variables available just in the scope of the method in which the networking was invoked.
 
 Let's do a quick example. Suppose we are inside a separate class. Now our block-based implementation:
 
@@ -135,7 +135,7 @@ Let's do a quick example. Suppose we are inside a separate class. Now our block-
 }
 ```
 
-With a delegate-based implementation: 
+With a delegate-based implementation:
 
 ```objective-c
 @interface SomeClass : NSObject <NetworkerDelegate>
@@ -178,7 +178,7 @@ Here's the idea:
 
 1. Fetch the title of the top post on the front page of Reddit.
 1. Use that as a search query to search for a picture on Reddit.
-1. Download the image and display it. 
+1. Download the image and display it.
 
 Open **ViewController.m** and add these lines:
 
@@ -189,25 +189,25 @@ Open **ViewController.m** and add these lines:
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+
     NSURL *redditFrontPageJSON = [NSURL URLWithString:@"http://www.reddit.com/r/pics.json"];
-    
+
     [Networker fetchContentsOfURL:redditFrontPageJSON completion:^(NSData *data, NSError *error) {
-        
+
         if (error == nil) {
             NSError *jsonParsingError = nil;
             NSDictionary *redditJSON = (NSDictionary *)[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonParsingError];
-            
+
             if (jsonParsingError == nil) {
                 NSArray *redditPosts = redditJSON[@"data"][@"children"];
                 NSDictionary *topPost = [redditPosts firstObject];
-                
+
                 NSString *thumbnailURL = topPost[@"data"][@"thumbnail"];
                 NSURL *documents = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
                 NSURL *fileURL = [documents URLByAppendingPathComponent:[thumbnailURL lastPathComponent]];
-                
+
                 [Networker downloadFileAtURL:[NSURL URLWithString:thumbnailURL] toLocation:fileURL completion:^(NSError *error) {
-                    
+
                     if (error == nil) {
                         dispatch_async(dispatch_get_main_queue(), ^{
                             UIImage *image = [UIImage imageWithContentsOfFile:[fileURL path]];

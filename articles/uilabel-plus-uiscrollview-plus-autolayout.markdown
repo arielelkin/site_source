@@ -10,7 +10,7 @@ footer: true
 ## Introduction
 In this article I'll explain how to easily fit a `UILabel` of variable height into a `UIScrollView` using Auto Layout, for those scenarios where a `UITextView` won't do.
 
-Why? Because Auto Layout will make sure the label's `frame` and the scrollview's `contentSize` will be the ones you want, regardless of orientation and device size. No more calls to `sizeToFit` or `setContentSize`! 
+Why? Because Auto Layout will make sure the label's `frame` and the scrollview's `contentSize` will be the ones you want, regardless of orientation and device size. No more calls to `sizeToFit` or `setContentSize`!
 
 {% img https://i.imgur.com/Dogopki.png 200 %}
 
@@ -62,9 +62,9 @@ You can go ahead and copy and paste this in an empty view controller to see in a
 
 ### `@"H:|[scrollViewLabel(scrollView)]"`
 
-This means: "The width of the label must be equal to the scrollview's width". 
+This means: "The width of the label must be equal to the scrollview's width".
 
-In AutoLayout, the `contentSize` of a scroll view is determined by the size of its subviews. So because the label is the scrollview's only subview, that constraint also implicitly means "Set the width of the scrollview's `contentsize` to the width of the label". 
+In AutoLayout, the `contentSize` of a scroll view is determined by the size of its subviews. So because the label is the scrollview's only subview, that constraint also implicitly means "Set the width of the scrollview's `contentsize` to the width of the label".
 
 ### `@"V:|[scrollViewLabel]|"`
 

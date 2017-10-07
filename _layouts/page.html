@@ -7,6 +7,10 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
+{% if page.path contains "articles" and page.url != "/articles/" %}
+<p><em>First published on {{ page.date | date: '%B %d, %Y' }}</em><p>
+{% endif %}
+
   <div class="post-content">
     {{ content }}
   </div>
@@ -14,6 +18,5 @@ layout: default
 {% if page.comments != false %}
 {% include disqus.html %}
 {% endif %}
-
 
 </article>
