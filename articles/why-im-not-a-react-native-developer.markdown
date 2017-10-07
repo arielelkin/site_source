@@ -235,7 +235,10 @@ Various Facebook developers have responded to the issues, attempting to reassure
 
 This has turned into an exercise in hermeneutics and speculation over a question of genuine importance: Can Facebook revoke its React Native license? If so, under what conditions?
 
+### October 2017 update: Facebook Relicensing
+"[A]fter several weeks of disappointment and uncertainty for our community", Facebook relicensed React, Jest, Flow, and Immutable.js under the MIT license. Sadly, React Native's license and patent haven't changed since this article was first published.
 
+I commend the claim that the Facebook people "don't want to hold back forward progress for nontechnical reasons", but I struggle to see which technical reason they have for maintaining the above situation for React Native.
 
 
 
@@ -1063,6 +1066,7 @@ You can read a Korean translation of this article [here](http://canapio.tistory.
 * [Please reconsider restrictions in PATENTS (Additional Grant of Patent Rights Version 2) #8952](https://github.com/facebook/react-native/issues/8952)
 * [Update PATENTS #3554](https://github.com/facebook/react/pull/3554). Ambitious pull request on the React repository.
 * [clarification on PATENTS grants and termination clauses #3617](https://github.com/facebook/react/issues/3617). Issue opened on the React repository.
+* [Facebook relicenses React, Jest, Flow, and Immutable.js under the MIT license](https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/)
 
 ### Appendix: A more detailed breakdown of React Native's Patent issues
 
