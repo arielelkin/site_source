@@ -4,6 +4,7 @@ title: "Apps I worked on"
 comments: false
 sharing: false
 footer: false
+permalink: /apps/
 ---
 
 ## Wine in Black
