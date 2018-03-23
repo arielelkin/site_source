@@ -18,8 +18,11 @@ disqus: arielelkin
 exclude:
   - site-source.sublime-project
   - site-source.sublime-workspace
+  - Gemfile
+  - Gemfile.lock
 
 # Build settings
 markdown: kramdown
 kramdown:
   input: GFM
+

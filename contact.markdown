@@ -19,5 +19,5 @@ You can also find me on:
 
 ## Work Enquiries
 
-I am available for hire on a permanent or freelance basis.
+I am available for hire on a freelance basis.
 

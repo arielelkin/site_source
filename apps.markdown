@@ -7,13 +7,32 @@ footer: false
 permalink: /apps/
 ---
 
+## Keakr
+
+A social network and music studio for the hip hop community. Discover new Hip Hop artists, record your own videos and rap battles.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/E19mt"><a href="//imgur.com/E19mt"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/app/keakr/id1098584596?mt=8)
+* [App's website](https://www.keakr.com/)
+
+## TuneMoji
+
+TuneMoji is a social network for sharing sonic GIFs. Share music, meme, and movie sound GIFs on your favorite messaging apps instantly (iMessage, WhatsApp, Facebook Messenger, Twitter, Kik and more).
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/h0x1Z"><a href="//imgur.com/h0x1Z"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
+* [App's website](http://emoticast.com/)
+
+
 ## Wine in Black
 
 iPhone and iPad app of fine wine store serving Germany, Austria, Switzerland, and France. Offers smooth catalog browsing, dynamic campaigns advertising, push notifications of flash sales, and smart checkout process.
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/jP1UW" data-context="false"><a href="//imgur.com/jP1UW">WiB Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
 * [App's website](https://www.wine-in-black.de/)
 
 ## Evino
@@ -22,7 +41,7 @@ Brazil's first and most highly-rated wine e-commerce app. Offers smooth catalog 
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/F53T9"><a href="//imgur.com/F53T9">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/us/app/evino-compre-vinho-online/id1008719792?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/evino-compre-vinho-online/id1008719792?mt=8)
 * [App's website](http://www.evino.com.br/)
 
 
@@ -32,7 +51,7 @@ Create and share short music videos with visual effects. Share them with the com
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/Idf18"><a href="//imgur.com/Idf18">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/us/app/playvuu/id794139886?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/playvuu/id794139886?mt=8)
 * [App's website](https://www.eyegroove.com/)
 
 ### Client
@@ -44,7 +63,7 @@ A virtual comedy club, with three comedians telling you jokes live. Jokes are pi
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/TSBUL"><a href="//imgur.com/TSBUL">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/us/app/playvuu/id921438876?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/playvuu/id921438876?mt=8)
 
 
 ## PlayVuü
@@ -53,7 +72,7 @@ Add real-time effects, animation, and frames to your videos. Uses GPU-accelerate
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/yhsqc"><a href="//imgur.com/yhsqc">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/us/app/playvuu/id816042079?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/playvuu/id816042079?mt=8)
 * [App's website](https://playvuu.com/)
 
 ### Client
@@ -65,7 +84,7 @@ On-demand video streaming service. Template-based user interface building. Digit
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/gFPIH"><a href="//imgur.com/gFPIH">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-* [App Store Link](https://itunes.apple.com/jp/app/bideopasu/id561854152?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/jp/app/bideopasu/id561854152?mt=8)
 * [App's website](https://www.videopass.jp/) (not accessible from outside Japan)
 
 ### Client
@@ -83,7 +102,7 @@ I focused on in-app scientific data collection, and App analytics.
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/tNQ8h"><a href="//imgur.com/tNQ8h">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 * [App's website](https://www.pocketsmile.icn.ucl.ac.uk/website/)
-* [App Store Link](https://itunes.apple.com/us/app/pocket-smile/id709226955?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/pocket-smile/id709226955?mt=8)
 
 
 ### Client
@@ -101,7 +120,7 @@ I focused on User Interface implementation, and In-App purchases.
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/ye5Vl"><a href="//imgur.com/ye5Vl">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 * [App's website](https://ninjajamm.com/)
-* [App Store Link](https://itunes.apple.com/us/app/ninja-jamm-ninja-tune-remix/id533809331?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/ninja-jamm-ninja-tune-remix/id533809331?mt=8)
 
 ### Featured in
 * App Store *Editor's Choice* Section
@@ -129,7 +148,7 @@ Follow Clara’s adventure around the Victoria and Albert Museum in an interacti
 Animated finger tracking and hidden interactive elements. Roll your finger over the screen to watch buttons fly, move the iPad to spin buttons (and Ollie!) and keep exploring every page for hidden treats.
 
 * [App's website](https://mappeditions.com/clarabutton/)
-* [App Store Link](https://itunes.apple.com/us/app/clara-button-magical-hat-day/id543867176?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/clara-button-magical-hat-day/id543867176?mt=8)
 
 ### Featured in
 * _The Guardian_
@@ -152,7 +171,7 @@ Titanic Calling offers an unusual insight into the final hours of Titanic, a vis
 The app uses a morse code generator featuring custom-made sound synthesisers that enable viewers to hear as well as watch the messages being transmitted.
 
 * [App's website](https://mappeditions.com/publications/titanic-calling)
-* [App Store Link](https://itunes.apple.com/us/app/titanic-calling/id514919851?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/titanic-calling/id514919851?mt=8)
 
 ### Featured in
 * *Financial Times*
@@ -177,7 +196,7 @@ I worked on the app's architecture, development, sound design, and testing.
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/0VKwI"><a href="//imgur.com/0VKwI">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 * [App's website](https://mappeditions.com/publications/nylpt)
-* [App Store Link](https://itunes.apple.com/us/app/nylpt/id571340172?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/nylpt/id571340172?mt=8)
 
 ### Made at
 
@@ -222,7 +241,7 @@ Personal project done in collaboration with [Justin Marazita](https://marazita.c
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/mfusP"><a href="//imgur.com/mfusP">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 * [App's website](https://www.marazita.com/audiosteam.html)
-* [App Store Link](https://itunes.apple.com/us/app/audiosteam/id526543006?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/audiosteam/id526543006?mt=8)
 
 ## AriVibes
 
@@ -231,5 +250,5 @@ Perform realtime manipulatations over sound picked up by your device's microphon
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/6zlCX"><a href="//imgur.com/6zlCX">Evino Screenshots</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 * [App's website](https://arivibes.com/)
-* [App Store Link](https://itunes.apple.com/us/app/arivibes/id497947030?mt=8)
+[![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/arivibes/id497947030?mt=8)
 

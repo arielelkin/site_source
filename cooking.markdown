@@ -2,9 +2,9 @@
 layout: page
 title: "Cooking"
 date: 2014-04-07 17:08
-comments: true
-sharing: true
-footer: true
+comments: false
+sharing: false
+footer: false
 ---
 
 Cooking is a member of my eclectic set of passions. I feel very strongly about sourcing quality ingredients, extracting their flavours, and composing a transcendental dish. Below is a selection of my culinary achievements.

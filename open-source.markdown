@@ -10,9 +10,9 @@ footer: false
 
 [https://github.com/pocketsvg/PocketSVG](https://github.com/pocketsvg/PocketSVG)
 
-Easily convert your SVG files into  `CGPaths`, `CAShapeLayers`, `UIBezierPaths`, or `NSBezierCurves`.
+Easily convert your SVG files into  `CGPaths`, `CAShapeLayers`, `UIBezierPaths`, or `NSBezierCurves`. This makes it easy to create vector-based paths and shapes in your iOS or macOS apps.
 
-This makes it easy to create vector-based paths and shapes in your iOS or macOS.
+Over 1000 GitHub stars, used in the Uber iOS apps.
 
 
 ## The Amazing Audio Engine
