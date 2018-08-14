@@ -6,7 +6,6 @@ comments: false
 sharing: true
 footer: true
 ---
-
 <!-- MarkdownTOC -->
 
 - [Introduction](#introduction)
@@ -28,6 +27,8 @@ footer: true
 
 <!-- /MarkdownTOC -->
 
+
+<a id="introduction"></a>
 # Introduction
 
 Many people are currently assessing React Native as a _platform_ to develop their next mobile app on. This is no trivial matter. Switching your software development platform involves a high setup cost and will profoundly impact your daily programming workflow. It is also one of the costliest decisions to reverse after anything substantial has been built.
@@ -44,8 +45,10 @@ Would it be a viable replacement? The blog posts I've read about React Native pr
 
 Having spent several months using React Native, I have found that it is neither a platform I would develop in, nor a platform I would recommend the use of. This article proposes to provide a more thorough evaluation of the pros and cons of switching from Swift development to React Native, and will argue against the switch.
 
+<a id="pros"></a>
 # Pros
 
+<a id="declarative-style"></a>
 ## Declarative style
 
 One thing I've found delightful about working with React Native was the declarative style in which the UI is programmed. In the React way of doing things, UI is _a function of_ state and properties, whereas in Cocoa Touch, UI is imperatively written.
@@ -144,6 +147,7 @@ You'll also notice that you end up reasoning of UI elements as if they were func
 I found it to be a useful way to think about UI. And it's a good evolution from MVC, with the View being just responsible for displaying itself and not for managing data, a welcome departure from `UIViewController` and its turning a blind eye to incestuous relationships between V and C.
 
 
+<a id="faster-iterations"></a>
 ## Faster iterations
 
 React Native's appeal isn't just intellectual, the framework will appeal to the pragmatically minded too.
@@ -162,6 +166,7 @@ React Native's feedback loop is _bewitchingly_ low. It takes less than one or tw
 This allows over-the-air code updates. Any changes in your JavaScript code can be instantly pushed to your users while the app is in production.
 
 
+<a id="cross-platform"></a>
 ## Cross-platform
 
 Remember that graceless and awkward conversation?
@@ -177,8 +182,10 @@ Being able to produce an Android incarnation of your app from the same codebase,
 The obvious advantages of any cross-platform frameworks are always compelling: market development, unified codebase, and a unified skill set required to maintain the app's codebase.
 
 
+<a id="cons"></a>
 # Cons
 
+<a id="uncertain-roadmap"></a>
 ## Uncertain roadmap
 
 A major concern with using React Native is the lack of long-term commitment for the project.
@@ -201,6 +208,7 @@ Again, we're not talking about an individual Cocoapod, we're talking about _the 
 
 
 
+<a id="patently-daunting"></a>
 ## Patently daunting
 
 Alongside its permissive BSD-style license, React Native ships with Facebook's **Additional Grant of Patent Rights**, Version 2. Facebook's motives for including this file aren't clear, nor is the file itself.
@@ -223,6 +231,7 @@ What I'm jeopardising here is both _the platform_ my app depends on _as well as_
 
 iOS apps enter the App Store _entirely_ at Apple's discretion. I don't want to multiply that uneasy feeling by two.
 
+<a id="patently-silent"></a>
 ### Patently silent
 
 Is the interpretation above correct? Is that worst-case scenario a possibility? Do I have a good reason to be worried? Do I have a good reason **not** to be worried?
@@ -235,13 +244,19 @@ Various Facebook developers have responded to the issues, attempting to reassure
 
 This has turned into an exercise in hermeneutics and speculation over a question of genuine importance: Can Facebook revoke its React Native license? If so, under what conditions?
 
+<a id="october-2017-update-facebook-relicensing"></a>
 ### October 2017 update: Facebook Relicensing
 "[A]fter several weeks of disappointment and uncertainty for our community", Facebook relicensed React, Jest, Flow, and Immutable.js under the MIT license. Sadly, React Native's license and patent haven't changed since this article was first published.
 
 I commend the claim that the Facebook people "don't want to hold back forward progress for nontechnical reasons", but I struggle to see which technical reason they have for maintaining the above situation for React Native.
 
+<a id="february-2018-update-facebook-relicensing-again"></a>
+### February 2018 update: Facebook Relicensing again
+
+As of 17 February, 2018, [Facebook relicensed React Native as MIT](https://github.com/facebook/react-native/commit/26684cf3adf4094eb6c405d345a75bf8c7c0bf88#diff-9879d6db96fd29134fc802214163b95a) 👍
 
 
+<a id="javascript"></a>
 ## Javascript
 
 A crucial downside to switching to React Native from Swift is the **technical regress**: you have to adopt and use JavaScript, a language that's
@@ -255,6 +270,7 @@ Allow me to argue why.
 All the examples of JavaScript code hereafter will be of valid JavaScript (ES2016) code
 
 
+<a id="javascripts-inadequacy"></a>
 ### Javascript's inadequacy
 
 One of my favourite bumper stickers proclaims:
@@ -288,6 +304,7 @@ Swift is safe. The compiler won't let you pass in an `Int` to a function that ex
 But JavaScript lacks these safeguards against programmer error, making _preventable_ runtime crashes and _preventable_ programmer errors part of your _routine_.
 
 
+<a id="type-errors"></a>
 #### Type errors
 
 The language does not enforce type of variables and parameters to functions:
@@ -341,6 +358,7 @@ Remember those `unrecognized selector sent to instance` crashes? Thought they we
 ![this.foo is not a function](https://i.imgur.com/J5ugzMI.png)
 
 
+<a id="lack-of-optionals"></a>
 #### Lack of optionals
 
 A very large amount of bugs in Objective-C code (and in many other older programming languages) are due to programmers inadvertently calling methods on objects that are `nil`.
@@ -355,6 +373,7 @@ Swift did away with this problem by implementing optionals, which force you to t
 
 
 
+<a id="lack-of-function-signature"></a>
 #### Lack of function signature
 
 In JavaScript, functions don't have a return type, you don't know what can be returned by the function, or if it returns anything at all.
@@ -380,6 +399,7 @@ console.log(foo) //[1, NaN, NaN]
 This messed up result is due to the fact that `parseInt` takes two parameters `(val, radix)` but `map` passes it 3 parameters `(currentValue, index, array)`. Still totally legal JavaScript (a language that some people consider viable for functional programming).
 
 
+<a id="immutability"></a>
 #### Immutability
 
 JavaScript's support for immutability is very poor.
@@ -413,6 +433,7 @@ But here's how you enforce immutability in React.
 You politely ask the developers to not mutate state. Yes, that's a screenshot from the React documentation.
 
 
+<a id="you-cant-trust-arrays"></a>
 #### You can't trust arrays
 
 You thought arrays were a "systematic arrangement of similar objects, usually in rows and columns"? Think again.
@@ -441,6 +462,7 @@ console.log(array[5]) //undefined
 
 JavaScript arrays have more in common with ordinary JavaScript objects than with what we'd call an array. Their lack of precise sequentiality and mutability doesn't make them well-behaved.
 
+<a id="poor-error-handling"></a>
 #### Poor error handling
 
 In JavaScript, you can have *any* function throw a runtime error or exception, without warning.
@@ -462,6 +484,7 @@ You can throw _anything_ you want as an exception; a string, a `Date`, a functio
 
 
 
+<a id="no-support-for-decimals"></a>
 #### No support for decimals
 
 Given that most decimal fractions cannot be accurately represented as binary fractions in hardware, many programming languages (including JavaScript and Swift) will often produce mathematically incorrect decimal arithmetic:
@@ -473,6 +496,7 @@ console.log(0.1 + 0.2 === 0.3) //false
 
 Which is why other languages' standard libraries often have support for decimal fractions (in Swift, for instance, we can use `Decimal`). In JavaScript, you have to resort to using a third-party library – or write your own.
 
+<a id="dodgy-maths"></a>
 #### Dodgy maths
 
 Remember to be careful with primary school arithmetic too. JavaScript has a complicated relationship with `0` and things that are not numbers.
@@ -497,6 +521,7 @@ console.log(isNaN('i like pumpkins')) //true
 ```
 
 
+<a id="unsafe-initialisation"></a>
 #### Unsafe initialisation
 
 JavaScript allows for objects to be left in an inconsistent state right after being created, as their properties don't need to be initialised.
@@ -524,6 +549,7 @@ var myRect = new Square()
 console.log(myRect.area()) // ReferenceError: width is not defined
 ```
 
+<a id="optional-curly-braces-after-an-if"></a>
 #### Optional curly braces after an `if`
 
 Curly braces after an `if` statement are optional:
@@ -544,6 +570,7 @@ if (1 > 2)
 To add that taste of adventure to your control flow statements.
 
 
+<a id="ambiguous-curly-braces"></a>
 #### Ambiguous curly braces
 
 Unless programmer intent can be very accurately inferred, a language shouldn't let curly braces be optional.
@@ -560,6 +587,7 @@ console.log(foo()) //undefined
 ```
 
 
+<a id="switch-fallthrough"></a>
 #### Switch fallthrough
 
 If you forget to include a `break` statement in a clause of a `switch` statement, you fall through. Also, a `switch` statement doesn't carry out checks for case exhaustivity.
@@ -581,6 +609,7 @@ switch (j) {
 */
 ```
 
+<a id="whats-nothing"></a>
 #### What's nothing?
 
 ```javascript
@@ -599,6 +628,7 @@ if (foo !== null && foo !== undefined) {
 }
 ```
 
+<a id="poor-expressivity"></a>
 #### Poor expressivity
 
 * No enums. Let alone enums with associated types. Good luck reliably representing state.
@@ -607,6 +637,7 @@ if (foo !== null && foo !== undefined) {
 * No `where` statement to increase expressivity of control flow statements.
 
 
+<a id="exceedingly-slow-evolution"></a>
 #### Exceedingly slow evolution
 
 Behold, ES2016 brought these new features to JavaScript:
@@ -645,6 +676,7 @@ So it took JavaScript 20 years to add a basic arithmetic operator and a quite li
 
 
 
+<a id="flow-to-the-rescue"></a>
 #### Flow to the rescue!
 
 Flow is Facebook's answer to many of the above grievances. It's a static type-checker for JavaScript, capable of inferring and tracking the types of the variables in your code, and alert you of impending doom.
@@ -824,6 +856,7 @@ Flow's an altogether powerful tool. Here are some examples of the useful things 
 *  `get-def         Gets the definition location of a variable or property`
 
 
+<a id="flows-like-flossing"></a>
 #### Flow's like flossing
 
 Is JavaScript fixed now? No.
@@ -851,6 +884,7 @@ And that's the reality: how many public `.js` files on GitHub use flow (i.e. con
 On a more relevant note, out of the hundred React Native repositories over at `awesome-react-native`, I wasn't able to find one that made any significant use of Flow and its type annotations. Nor was I able to find a single React Native tutorial mentioning (let alone advising you) the use of Flow.
 
 
+<a id="the-javascript-ecosystem-balls-and-chains"></a>
 ### The Javascript Ecosystem: balls and chains
 
 JavaScript's deficiencies seem to impress everyone except JavaScript developers, for whom the aspects of JavaScript that I outlined above are not awful warts, they're "quirks" or "gotchas" that _you_, not your language, have to be on the lookout for.
@@ -873,6 +907,7 @@ The situation is illustrated very well by this cartoon:
 "Freedom from digging" is simply choosing a language that has built-in support for the things you need. This digging is not a good use of energy. JavaScript is not naturally conducive to good software engineering also for this reason: it forces you to develop and depend on things that other languages offer by default.
 
 
+<a id="chains"></a>
 #### Chains
 
 JavaScript has bigger fish to fry. It's a language that needs to cater to the needs of literally _billions_ of internet users, who may or may not update their browser or website. That cripples the development of the language.
@@ -892,6 +927,7 @@ JavaScript's evolution, which caters to the needs of:
 is admirably democratic. But on the other hand, it will be much slower than that of other languages, and it probably won't prioritise developer ergonomics as much as  portability.
 
 
+<a id="wider-angles"></a>
 #### Wider angles
 
 From a historical perspective, the pattern we're seeing here, of a seemingly deficient language gaining popularity and being repudiated by the incumbents of the platforms it wants to take over, is poignant and familiar.
@@ -943,6 +979,7 @@ In fact, many things lead to negative productivity gains. For example:
 * a slow pace of development
 * All the above (JavaScript)
 
+<a id="dependencies"></a>
 ## Dependencies
 
 React Native has a total of 648 dependencies.
@@ -960,6 +997,7 @@ Will their licenses stay compatible with your software? Hopefully.
 And will they all implement best practices in security? Or can you tolerate 648 separate potential security risks?
 
 
+<a id="better-alternatives"></a>
 ## Better alternatives
 
 If cross-platform development is what drew you to React Native, consider your options.
@@ -983,6 +1021,7 @@ Projects are more likely to survive and thrive in this red ocean of cross-platfo
 (An honorable mention goes to Flutter, a cross-platform development platform (iOS and Android) being written by Google. It uses a language that's safer and more expressive than JavaScript (Dart), it helps you follow principles of Material design, and produces natively compiled code. Unlike Xamarin and Appcelerator, it's open-source. It's currently not production-ready, but it's promising nonetheless.)
 
 
+<a id="conclusion"></a>
 # Conclusion
 
 Good software development platforms have four essential features.
@@ -1010,20 +1049,24 @@ And that is why I am not a React Native developer.
 
 
 
+<a id="acknowledgements"></a>
 # Acknowledgements
 
 My thanks to Rami Chowdhury and Alkis Papadakis for their helpful feedback on early version of this article. Thanks also to Greg McMullen for helping me decipher esoteric IP texts.
 
+<a id="changelog"></a>
 # Changelog
 
 You can track this article's edits [here](https://github.com/arielelkin/arielelkin.github.io/commits/master/articles/why-im-not-a-react-native-developer.html).
 
+<a id="comments"></a>
 # Comments
 
 Follow and participate to the discussion of this article on [Hacker News](https://news.ycombinator.com/item?id=12549590), [Hacker News (again)](https://news.ycombinator.com/item?id=12592762) and [/r/programming](https://www.reddit.com/r/programming/comments/53yxk5/why_im_not_a_react_native_developer/).
 
 You can read a Korean translation of this article [here](http://canapio.tistory.com/73) (courtesy of [canapio](https://twitter.com/canapio/status/812803213460049921)).
 
+<a id="references"></a>
 # References
 
 * [We are the Team working on React Native AMA](https://www.reddit.com/r/IAmA/comments/3wyb3m/we_are_the_team_working_on_react_native_ask_us/cxzvfir)
@@ -1068,6 +1111,7 @@ You can read a Korean translation of this article [here](http://canapio.tistory.
 * [clarification on PATENTS grants and termination clauses #3617](https://github.com/facebook/react/issues/3617). Issue opened on the React repository.
 * [Facebook relicenses React, Jest, Flow, and Immutable.js under the MIT license](https://code.facebook.com/posts/300798627056246/relicensing-react-jest-flow-and-immutable-js/)
 
+<a id="appendix-a-more-detailed-breakdown-of-react-natives-patent-issues"></a>
 ### Appendix: A more detailed breakdown of React Native's Patent issues
 
 From [Greg McMullen](https://twitter.com/gmcmullen).
