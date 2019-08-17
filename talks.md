@@ -3,7 +3,7 @@ layout: page
 title: Talks and Workshops
 comments: false
 ---
-
+* "Myths of Software Engineering Ethics" at [AltConf London](http://london.altconf.com/). [Slides](https://www.slideshare.net/arielelkin/software-engineering-ethics-myths).
 * "Listening to Reason: The Observer Pattern in Swift" (_Escuchando la razón: El Patrón Observer en Swift_) at [NSConf Argentina](http://nsconfarg.com/#archivo). [Video](https://vimeo.com/album/4605304/video/219014420) and [slides](https://speakerdeck.com/arielelkin/escuchando-la-razon-el-patron-observer-en-swift-listening-to-reason-the-observer-pattern-in-swift).
 * "Why I'm not a React Native Developer" at [Cocoaheads Berlin](https://www.meetup.com/Cocoaheads-Berlin/events/233851604/). [Article](articles/why-im-not-a-react-native-developer) and [slides]().
 * "The Worst Myths of Software Engineering Ethics" at [Project A Ventures](http://www.project-a.com/).

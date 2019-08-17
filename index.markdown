@@ -15,4 +15,4 @@ I love Hackathons (big fan of [Music Hackday](http://new.musichackday.org/) and 
 
 I studied Computer Science at University College London. Prior to that, I studied Philosophy, Logic & Scientific Method at the London School of Economics and Political Science.
 
-<img style="float: center;" width="300" src="https://i.imgur.com/Ssr0ulo.jpg">
+<img style="float: center;" width="300" src="/images/desk.jpg">
