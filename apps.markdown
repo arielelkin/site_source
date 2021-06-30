@@ -7,11 +7,25 @@ footer: false
 permalink: /apps/
 ---
 
+## IRIS Listen Well
+
+Providing audio experiences built around immersive technology and progressive biology. Real-time audio effect applied to iTunes and Spotify tracks.
+
+{% include image-gallery.html folder="/images/apps/iris" %}
+[![](/images/download_on_the_app_store_badge.svg)](https://apps.apple.com/gb/app/iris-listen-well/id1483354578)
+* [Website](https://irislistenwell.com/)
+
+
+
 ## Tesco Pay+
 
 A simple, convenient and rewarding way to pay at a Tesco store and collect Tesco Clubcard points with a single scan of your phone.
 
 {% include image-gallery.html folder="/images/apps/tpp" %}
+[![](/images/download_on_the_app_store_badge.svg)](https://apps.apple.com/gb/app/tesco-pay-for-simple-checkout/id917685544)
+* [Website](https://www.tesco.com/zones/pay-plus)
+
+
 
 ## Keakr
 
@@ -20,7 +34,9 @@ A social network and music studio for the hip hop community. Discover new Hip Ho
 {% include image-gallery.html folder="/images/apps/keakr" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/app/keakr/id1098584596?mt=8)
-* [App's website](https://www.keakr.com/)
+* [Website](https://www.keakr.com/)
+
+
 
 ## TuneMoji
 
@@ -29,7 +45,8 @@ TuneMoji is a social network for sharing sonic GIFs. Share music, meme, and movi
 {% include image-gallery.html folder="/images/apps/tunemoji" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
-* [App's website](http://emoticast.com/)
+* [Website](http://emoticast.com/)
+
 
 
 ## Wine in Black
@@ -39,7 +56,7 @@ iPhone and iPad app of fine wine store serving Germany, Austria, Switzerland, an
 {% include image-gallery.html folder="/images/apps/wib" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/de/app/wine-in-black-wein-champagner-mobil-kaufen/id547552864?mt=8)
-* [App's website](https://www.wine-in-black.de/)
+* [Website](https://www.wine-in-black.de/)
 
 ## Evino
 
@@ -48,7 +65,8 @@ Brazil's first and most highly-rated wine e-commerce app. Offers smooth catalog 
 {% include image-gallery.html folder="/images/apps/evino" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/evino-compre-vinho-online/id1008719792?mt=8)
-* [App's website](http://www.evino.com.br/)
+* [Website](http://www.evino.com.br/)
+
 
 
 ## Eyegroove
@@ -58,10 +76,12 @@ Create and share short music videos with visual effects. Share them with the com
 {% include image-gallery.html folder="/images/apps/eyegroove" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/playvuu/id794139886?mt=8)
-* [App's website](https://www.eyegroove.com/)
+* [Website](https://www.eyegroove.com/)
 
 ### Client
-[{% img https://i.imgur.com/qrTr4vS.png 200 %}](https://www.eyegroove.com/)
+[{% img /images/clients/eyegroove.png 200 %}](https://playvuu.com/)
+
+
 
 ## PunHusky Comedy Club
 
@@ -79,10 +99,10 @@ Add real-time effects, animation, and frames to your videos. Uses GPU-accelerate
 {% include image-gallery.html folder="/images/apps/playvuu" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/playvuu/id816042079?mt=8)
-* [App's website](https://playvuu.com/)
+* [Website](https://playvuu.com/)
 
 ### Client
-[{% img https://i.imgur.com/JpJlxn0.jpg 200 %}](https://playvuu.com/)
+[{% img /images/clients/playvuu.jpg 200 %}](https://playvuu.com/)
 
 ## Video Pass
 
@@ -91,11 +111,11 @@ On-demand video streaming service. Template-based user interface building. Digit
 {% include image-gallery.html folder="/images/apps/videopass" %}
 
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/jp/app/bideopasu/id561854152?mt=8)
-* [App's website](https://www.videopass.jp/) (not accessible from outside Japan)
+* [Website](https://www.videopass.jp/) (not accessible from outside Japan)
 
 ### Client
 
-[{% img https://i.imgur.com/AEPnXUg.jpg 200 %}](https://www.saffrondigital.com/)
+[{% img /images/clients/saffron.jpg 200 %}](https://www.saffrondigital.com/)
 
 
 
@@ -107,13 +127,14 @@ I focused on in-app scientific data collection, and App analytics.
 
 {% include image-gallery.html folder="/images/apps/pocketsmile" %}
 
-* [App's website](https://www.pocketsmile.icn.ucl.ac.uk/website/)
+* [Website](https://www.pocketsmile.icn.ucl.ac.uk/website/)
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/pocket-smile/id709226955?mt=8)
 
 
 ### Client
 
-[{% img https://i.imgur.com/8qK42JZ.jpg 200 %}](https://www.icn.ucl.ac.uk/)
+[{% img /images/clients/ucl.jpg 200 %}](https://www.icn.ucl.ac.uk/)
+
 
 
 ## NinjaJamm
@@ -125,7 +146,7 @@ I focused on User Interface implementation, and In-App purchases.
 
 {% include image-gallery.html folder="/images/apps/ninjajamm" %}
 
-* [App's website](https://ninjajamm.com/)
+* [Website](https://ninjajamm.com/)
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/ninja-jamm-ninja-tune-remix/id533809331?mt=8)
 
 ### Featured in
@@ -139,8 +160,8 @@ I focused on User Interface implementation, and In-App purchases.
 >""Ninja Jamm is another example of creative thinking; this is another way for us to consume the music we love, creating something new as a result. We’ve seen several other remix apps before, however Ninja Jamm feels like the best and carefully thought out app so far."
 
 ### Clients
-[{% img https://i.imgur.com/EeuE2X8.jpg 100 %}](https://ninjatune.net/)
-[{% img https://i.imgur.com/XUr4XQP.png 200 %}](https://seeper.com/)
+[{% img /images/clients/ninjatune.jpg 100 %}](https://ninjatune.net/)
+[{% img /images/clients/seeper.png 200 %}](https://seeper.com/)
 
 
 
@@ -153,7 +174,7 @@ Follow Clara’s adventure around the Victoria and Albert Museum in an interacti
 
 Animated finger tracking and hidden interactive elements. Roll your finger over the screen to watch buttons fly, move the iPad to spin buttons (and Ollie!) and keep exploring every page for hidden treats.
 
-* [App's website](https://mappeditions.com/clarabutton/)
+* [Website](https://mappeditions.com/clarabutton/)
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/clara-button-magical-hat-day/id543867176?mt=8)
 
 ### Featured in
@@ -165,8 +186,10 @@ Animated finger tracking and hidden interactive elements. Roll your finger over 
 
 Mapp Editions for the Victoria & Albert Museum.
 
-[{% img https://i.imgur.com/NmJdldu.png 150 %}](https://mappeditions.com/)
-[{% img https://i.imgur.com/QKWmDAT.jpg 200 %}](https://www.vam.ac.uk/)
+[{% img /images/clients/mapp.png 150 %}](https://mappeditions.com/)
+[{% img /images/clients/vanda.jpg 200 %}](https://www.vam.ac.uk/)
+
+
 
 ## Titanic Calling
 
@@ -176,7 +199,7 @@ Titanic Calling offers an unusual insight into the final hours of Titanic, a vis
 
 The app uses a morse code generator featuring custom-made sound synthesisers that enable viewers to hear as well as watch the messages being transmitted.
 
-* [App's website](https://mappeditions.com/publications/titanic-calling)
+* [Website](https://mappeditions.com/publications/titanic-calling)
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/titanic-calling/id514919851?mt=8)
 
 ### Featured in
@@ -186,8 +209,8 @@ The app uses a morse code generator featuring custom-made sound synthesisers tha
 
 Mapp Editions for the Bodleian Library
 
-[{% img https://i.imgur.com/NmJdldu.png 150 %}](https://mappeditions.com/)
-[{% img https://i.imgur.com/PrUoDFj.png 325 %}](https://www.bodleian.ox.ac.uk/bodley)
+[{% img /images/clients/mapp.png 150 %}](https://mappeditions.com/)
+[{% img /images/clients/bodleian.png 325 %}](https://www.bodleian.ox.ac.uk/bodley)
 
 
 
@@ -201,12 +224,13 @@ I worked on the app's architecture, development, sound design, and testing.
 
 {% include image-gallery.html folder="/images/apps/jason-evans" %}
 
-* [App's website](https://mappeditions.com/publications/nylpt)
+* [Website](https://mappeditions.com/publications/nylpt)
+
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/nylpt/id571340172?mt=8)
 
 ### Made at
 
-[{% img https://i.imgur.com/NmJdldu.png 200 %}](https://mappeditions.com/)
+[{% img /images/clients/mapp.png 200 %}](https://mappeditions.com/)
 
 
 ## iPad app for the Paul Graham Exhibition at Le Bal Gallery
@@ -217,11 +241,11 @@ I worked on the app's architecture, development, and testing.
 
 {% include image-gallery.html folder="/images/apps/paul-graham" %}
 
-* [App's website](https://mappeditions.com/publications/paul-graham-at-le-bal)
+* [Website](https://mappeditions.com/publications/paul-graham-at-le-bal)
 
 ### Made at
 
-[{% img https://i.imgur.com/NmJdldu.png 200 %}](https://mappeditions.com/)
+[{% img /images/clients/mapp.png 200 %}](https://mappeditions.com/)
 
 
 ## Blood Earth
@@ -235,7 +259,7 @@ I worked on the app's architecture, development, and audio engine.
 * [App Video](https://youtu.be/iS0WvQFFJ48)
 
 ### Client
-[{% img https://i.imgur.com/tiLtJIL.png 200 %}](https://jazzsteppa.co.uk/)
+[{% img /images/clients/jazzsteppa.png 200 %}](https://jazzsteppa.co.uk/)
 
 
 ## AudioSteam
@@ -246,8 +270,11 @@ Personal project done in collaboration with [Justin Marazita](https://marazita.c
 
 {% include image-gallery.html folder="/images/apps/audiosteam" %}
 
-* [App's website](https://www.marazita.com/audiosteam.html)
+* [Website](https://www.marazita.com/audiosteam.html)
+
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/audiosteam/id526543006?mt=8)
+
+
 
 ## AriVibes
 
@@ -255,6 +282,7 @@ Perform realtime manipulatations over sound picked up by your device's microphon
 
 {% include image-gallery.html folder="/images/apps/arivibes" %}
 
-* [App's website](https://arivibes.com/)
+* [Website](https://arivibes.com/)
+
 [![](/images/download_on_the_app_store_badge.svg)](https://itunes.apple.com/us/app/arivibes/id497947030?mt=8)
 
