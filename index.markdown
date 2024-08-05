@@ -5,7 +5,7 @@ sharing: false
 footer: false
 ---
 
-This is my website. I'm an iOS and macOS developer, working for [IRIS Audio Technologies](https://iris.audio). 
+This is my website. I'm an iOS and macOS developer, working for [Cognizant](https://www.cognizant.com/). 
 
 Here's the [list of apps I worked on](/apps). I love making all kinds of apps and have worked on over ten apps in four different App Store categories. I also used to edit the [Mobile section of SitePoint](https://www.sitepoint.com/mobile/).
 

@@ -6,4 +6,5 @@ _site
 xcuserdata
 project.xcworkspace
 *.sublime-workspace
-
+.bundle
+vendor
